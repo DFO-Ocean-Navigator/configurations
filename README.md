@@ -1,5 +1,5 @@
 # configurations
-This will contain DFO specific Ocean Navigator configuration files
+This will contain off site  specific Ocean Navigator configuration files
 
 The two files of interest are datasetconfig.json which contains the various
 datasets, variables, derived variables, and the location of the indexing
