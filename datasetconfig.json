@@ -934,7 +934,7 @@
     },
     "salishseacast_3d_biology": {
         "enabled": true,
-        "name": "16. SalishSeaCast 3D Biology",
+        "name": "15. SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
         "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DBiologyFields1hV19-05",
