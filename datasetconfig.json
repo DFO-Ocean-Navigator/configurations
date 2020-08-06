@@ -1,104 +1,9 @@
 {
-    "GLOBAL_REANALYSIS_PHY_001_026": {
-        "url": "/data/db/GLOBAL_REANALYSIS_PHY_001_026.sqlite3",
-        "name": "Monthly Mean From Reanalyses",
-        "quantum": "month",
-        "type": "historical",
-        "time_dim_units": "days since 1950-01-01 00:00:00",
-        "enabled": false,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": "",
-        "variables": {
-            "thetao_cglo": { "name": "C-GLORS Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_cglo": { "name": "C-GLORS Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_cglo": { "name": "C-GLORS Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_cglo": { "name": "C-GLORS Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_cglo": { "name": "C-GLORS Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_cglo, vo_cglo)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_cglo": { "name": "C-GLORS Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] },
-            "thetao_foam": { "name": "FOAM/GloSea  Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_foam": { "name": "FOAM/GloSea  Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_foam": { "name": "FOAM/GloSea Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_foam": { "name": "FOAM/GloSea Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_foam": { "name": "FOAM/GloSea Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_foam, vo_foam)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_foam": { "name": "FOAM/GloSea Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] },
-            "thetao_glor": { "name": "GLORYS2V4  Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_glor": { "name": "GLORYS2V4  Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_glor": { "name": "GLORYS2V4 Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_glor": { "name": "GLORYS2V4 Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_glor": { "name": "GLORYS2V4 Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_glor, vo_glor)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_glor": { "name": "GLORYS2V4Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] },
-            "thetao_mean": { "name": "Mean of Input Analyses Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_mean": { "name": "Mean of Input Analyses Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_mean": { "name": "Mean of Input Analyses Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_mean": { "name": "Mean of Input Analyses Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_mean": { "name": "Mean of Input Analyses Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_mean, vo_mean)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_mean": { "name": "Mean of Input Analyses Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] },
-            "thetao_oras": { "name": "ORAS5 Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_oras": { "name": "ORAS5 Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_oras": { "name": "ORAS5 Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_oras": { "name": "ORAS5 Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_oras": { "name": "ORAS5 Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_oras, vo_oras)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_oras": { "name": "ORAS5 Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] },
-            "thetao_std": { "name": "Standard Deviation of Input Analyses Temperature", "unit": "Celsius", "scale": [-5, 30], "dims": ["time", "depth", "latitude", "longitude"] },
-            "so_std": { "name": "Standard Deviation of Input Analyses Salinity", "unit": "PSU", "scale": [30, 40], "dims": ["time", "depth", "latitude", "longitude"] },
-            "vo_std": { "name": "Standard Deviation of Input Analyses Northward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "uo_std": { "name": "Standard Deviation of Input Analyses Eastward Velocity", "unit": "m/s", "scale": [-3, 3], "dims": ["time", "depth", "latitude", "longitude"] },
-            "magwatervel_std": { "name": "Standard Deviation of Input Analyses Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo_std, vo_std)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "siconc_std": { "name": "Standard Deviation of Input Analyses Sea Ice Concentration", "unit": "fraction", "scale": [0, 1], "dims": ["time", "depth", "latitude", "longitude"] }
-        }
-    },
-    "historical_giops_monthly": {
-        "attribution": "Historical GIOPS Monthly Averages from CONCEPTS",
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "enabled": false,
-        "help": "<p>ENVIRONMENT AND CLIMATE CHANGE CANADA<p>Please note that information related to Global Ice-Ocean Prediction System (GIOPS) data available on the MSC Datamart is now hosted on the MSC Open Data public documentation page at this address: <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_en/\" target=\"_new\">https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_en/</a> \nThank you for your interest in our data and services.<p>ENVIRONNEMENT ET CHANGEMENT CLIMATIQUE CANADA<p>Veuillez noter que les informations reliées aux données de Système global de prévision océan-glace (SGPOG) disponibles sur le Datamart du SMC sont désormais hébergées sur la nouvelle documentation publique des données ouvertes du SMC à cette adresse: <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_fr/\" target=\"_new\">https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_fr/</a> \nMerci de votre intérêt dans nos données et services.",
-        "name": "Historical GIOPS Monthly",
-        "quantum": "month",
-        "lat_var_key": "y",
-        "lon_var_key": "x",
-        "url": "/data/db/historical-giops-monthly.sqlite3",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "variables": {
-            "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true"  },
-            "aice": { "name": "Ice Concentration", "envtype": "ocean", "unit": "fraction", "scale": [0, 1] },
-            "vice": { "name": "Ice Volume",        "envtype": "ocean", "unit": "m", "scale": [0, 10] }
-        }
-    },
-    "historical_giops_day": {
-        "name": "Historical GIOPS Daily",
-        "url": "/data/db/historical-giops-daily.sqlite3",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": false,
+    "giops_day": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/giops-fc3dll-10day.sqlite3",
+        "name": "01. GIOPS 10 day Forecast 3D - LatLon",
         "quantum": "day",
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "GIOPS Daily Values from CONCEPTS",
-        "lat_var_key": "y",
-        "lon_var_key": "x",
-        "help": "<p>ENVIRONMENT AND CLIMATE CHANGE CANADA<p>Please note that information related to Global Ice-Ocean Prediction System (GIOPS) data available on the MSC Datamart is now hosted on the MSC Open Data public documentation page at this address: <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_en/\" target=\"_new\">https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_en/</a> \nThank you for your interest in our data and services.<p>ENVIRONNEMENT ET CHANGEMENT CLIMATIQUE CANADA<p>Veuillez noter que les informations reliées aux données de Système global de prévision océan-glace (SGPOG) disponibles sur le Datamart du SMC sont désormais hébergées sur la nouvelle documentation publique des données ouvertes du SMC à cette adresse: <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_fr/\" target=\"_new\">https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops_fr/</a> \nMerci de votre intérêt dans nos données et services.",
-        "variables": {
-            "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true"  },
-            "aice": { "name": "Ice Concentration", "envtype": "ocean", "unit": "fraction", "scale": [0, 1] },
-            "vice": { "name": "Ice Volume",        "envtype": "ocean", "unit": "m", "scale": [0, 10] }
-        }
-    },
-    "wcps_2dll": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/wcps-2dll.sqlite3",
-        "name": "12. WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
-        "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "enabled": true,
@@ -107,61 +12,48 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/wcps.html\" target=\"_new\">link</a>.",
-
-        "variables": {
-            "uwindsurf": { "name": "Surface Wind North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-15, 15], "zero_centered": "true" },
-            "vwindsurf": { "name": "Surface Wind East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-15, 15], "zero_centered": "true" },
-            "magwindsurf": { "name": "Suface Wind Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 15], "equation": "magnitude(uwindsurf, vwindsurf)",  "dims": ["time", "latitude", "longitude"] },
-            "vozocrtx": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-0.07, 5], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
-            "tairsurf": { "name": "Surface Air Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-20, 20], "equation": "tairsurf - 273.15", "dims": ["time", "latitude", "longitude"] },
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-2, 2], "zero_centered": "true" },
-            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
-            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [2, 265] },
-            "iicevol": { "name": "Sea Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
-            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
-            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
-            "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(itmecrty, itzocrtx)", "dims": ["time", "latitude", "longitude"] },
-            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1], "scale_factor": 1e4},
-            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-17, 40], "scale_factor": 1e2 }
-        }
-    },
-    "giops_fc_2dll": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc2dll.sqlite3",
-        "name": "05. GIOPS 3 hr mean Forecast Surface - LatLon",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/giops-surface.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "latitude", "longitude"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "latitude", "longitude"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
-            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
-            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
-            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "latitude", "longitude"] },
-            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
-            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "magnitude(itmecrty, itzocrtx)", "dims": ["time", "latitude", "longitude"] },
-            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
-            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
+            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
+            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] }
+        }
+    },
+    "giops_fc_10day_3dps": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/giops-fc3dps-10day.sqlite3",
+        "name": "02. GIOPS 10 day Forecast 3D - Polar Stereographic",
+        "quantum": "day",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "yc",
+        "lon_var_key": "xc",
+        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "yc", "xc"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "yc", "xc"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
+            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+            "density": { "name": "Water Density", "envtype": "ocean", "scale": [1000, 1030], "scale_factor": 1, "unit": "kg/m^3", "equation": "density(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+            "heatcapacity": { "name": "Heat Capacity", "envtype": "ocean", "scale": [3950, 4220], "scale_factor": 1, "unit": "J/(kg*K)", "equation": "heatcap(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+            "tempgradient": { "name": "Adiabatic Temp Gradient", "envtype": "ocean", "scale": [-2.9e-5, 1.5e-4], "scale_factor": 1, "unit": "Celsius/db", "equation": "tempgradient(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
+            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
+            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] }
         }
     },
     "giops_fc_10d_2dll": {
@@ -195,93 +87,6 @@
             "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
             "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
             "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "magnitude(itmecrty, itzocrtx)", "dims": ["time", "latitude", "longitude"] },
-            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
-            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
-        }
-    },
-    "giops_fc_3dll": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc3dll.sqlite3",
-        "name": "07. GIOPS Daily Forecast 3D - LatLon",
-        "quantum": "day",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/giops-3d.html\" target=\"_new\">link</a>.",
-
-        "variables": {
-            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "latitude", "longitude"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
-            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] }
-        }
-    },
-    "giops_day": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc3dll-10day.sqlite3",
-        "name": "01. GIOPS 10 day Forecast 3D - LatLon",
-        "quantum": "day",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
-
-        "variables": {
-            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "latitude", "longitude"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "latitude", "longitude"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
-            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] }
-        }
-    },
-    "giops_fc_2dps": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc2dps.sqlite3",
-        "name": "06. GIOPS 3 hr mean Forecast Surface - Polar Stereographic",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
-        "help": " Document <a href=\"../data-help/giops-surface.html\" target=\"_new\">link</a>.",
-
-        "variables": {
-            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "yc", "xc"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
-            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
-            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
-            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "yc", "xc"] },
-            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
-            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
             "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
             "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
         }
@@ -320,6 +125,101 @@
             "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
         }
     },
+    "giops_fc_2dll": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/giops-fc2dll.sqlite3",
+        "name": "05. GIOPS 3 hr mean Forecast Surface - LatLon",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/giops-surface.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
+            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
+            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
+            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
+            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
+            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "magnitude(itmecrty, itzocrtx)", "dims": ["time", "latitude", "longitude"] },
+            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
+            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
+        }
+    },
+    "giops_fc_2dps": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/giops-fc2dps.sqlite3",
+        "name": "06. GIOPS 3 hr mean Forecast Surface - Polar Stereographic",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "yc",
+        "lon_var_key": "xc",
+        "help": " Document <a href=\"../data-help/giops-surface.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "yc", "xc"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
+            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
+            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
+            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
+            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "yc", "xc"] },
+            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
+            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
+            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
+        }
+    },
+    "giops_fc_3dll": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/giops-fc3dll.sqlite3",
+        "name": "07. GIOPS Daily Forecast 3D - LatLon",
+        "quantum": "day",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/giops-3d.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "latitude", "longitude"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "latitude", "longitude"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
+            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
+            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] }
+        }
+    },
     "giops_fc_3dps": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc3dps.sqlite3",
@@ -334,36 +234,6 @@
         "lat_var_key": "yc",
         "lon_var_key": "xc",
         "help": " Document <a href=\"../data-help/giops-3d.html\" target=\"_new\">link</a>.",
-
-        "variables": {
-            "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "yc", "xc"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "yc", "xc"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
-            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "density": { "name": "Water Density", "envtype": "ocean", "scale": [1000, 1030], "scale_factor": 1, "unit": "kg/m^3", "equation": "density(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "heatcapacity": { "name": "Heat Capacity", "envtype": "ocean", "scale": [3950, 4220], "scale_factor": 1, "unit": "J/(kg*K)", "equation": "heatcap(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "tempgradient": { "name": "Adiabatic Temp Gradient", "envtype": "ocean", "scale": [-2.9e-5, 1.5e-4], "scale_factor": 1, "unit": "Celsius/db", "equation": "tempgradient(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 3000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] }
-        }
-    },
-    "giops_fc_10day_3dps": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc3dps-10day.sqlite3",
-        "name": "02. GIOPS 10 day Forecast 3D - Polar Stereographic",
-        "quantum": "day",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
-        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
 
         "variables": {
             "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -406,34 +276,6 @@
             "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] }
         }
     },
-    "riops_fc_2dps": {
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "envtype": ["ocean"],
-        "enabled": true,
-        "help": " Document <a href=\"../data-help/riops-surface.html\" target=\"_new\">link</a>.",
-        "name": "11. RIOPS Forecast Surface - Polar Stereographic",
-        "quantum": "hour",
-        "type": "forecast",
-        "cache": 6,
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "url": "/data/db/riops-fc2dps.sqlite3",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "variables": {
-            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
-            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
-            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
-            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
-            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "latitude", "longitude"] },
-            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
-            "itmecrty": { "name": "Sea Ice Y Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "itzocrtx": { "name": "Sea Ice X Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
-            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
-        }
-    },
     "riops_fc_3dps": {
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
@@ -465,193 +307,255 @@
             "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 5000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] }
         }
     },
-    "ecc_datamart_riops_fc_3dps": {
+    "riops_fc_2dps": {
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
-        "enabled": false,
-        "help": "<p>The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides instantaneous sea ice and time-mean ocean forecast fields produced by its experimental Reginoal Ice-Ocean Prediction System (RIOPS) and interpolated to a grid in north-polar stereographic projection with 5km resolution at the standard parallel 60&#176; N (ps5km60N).<p> The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions.<p> RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 2 day forecasts daily based at [00, 06, 12, 18] UTC on a subset of the 1/12&#176; resolution global tri-polar grid (ORCA12).Le Centre de prévision m&eacute;t&eacute;orologique et environnementale du Canada (CPMEC) fournit des instantan&eacute;s de champs prévisionnels de glace et des moyennes temporelles des champs oc&eacute;aniques pr&eacute;visionnels produits par son syst&egrave;me r&eacute;gional de pr&eacute;vision oc&eacute;an-glace (SRPOG) exp&eacute;rimental et interpol&eacute;es sur une grille en projection polaire st&eacute;r&eacute;ographique nord d'une r&eacute;solution de 5 km &agrave; une latitude de 60&#176;N (ps5km60N).<p>Les fichiers des données sont en format NetCDF (NetCDF-4 mod&egrave;le classique), conformes aux conventions CF liées au climat et aux pr&eacute;visions (Climate and Forecast Conventions).<p>Le SRPOG utilise le mod&egrave; oc&eacute;an-glace NEMO-CICE et fournit des analyses et pr&eacute;visions globales de 2 jours de l'océan et de la glace marine, quotidiennement &agrave; partir de [00, 06, 12, 18] UTC. Le SRPOG comprend une analyse 3DVar de la concentration de la glace (assimilant des observations satellitaires et des cartes de glace du service canadien des glaces) alors que les larges &eacute;chelles de l'analyse océanique sont contraintes en rappelant spectralement les champs de temp&eacute;rature et de salinit&eacute; vers ceux du système global de pr&eacute;vision oc&eacute;an-glace du CCMEP (qui lui inclut un syst&egrave;me d'assimilation multivari&eacute; qui ingère des observations satellitaires ainsi que des observations in-situ). Les flux atmosphériques servant aux champs d'essai et aux prv&eacute;isions de 2 jours sont calcul&eacute;s &agrave; partir d'une fusion des champs de surface des pr&eacute;visions atmosphériques issues du syst&egrave;me global et r&eacute;gional de pr&eacute;vision d&eacute;terministe du CPMEC",
-        "name": "ECC Data Mart RIOPS Forecast 3D - Polar Stereographic",
-        "quantum": "day",
+        "enabled": true,
+        "help": " Document <a href=\"../data-help/riops-surface.html\" target=\"_new\">link</a>.",
+        "name": "11. RIOPS Forecast Surface - Polar Stereographic",
+        "quantum": "hour",
         "type": "forecast",
         "cache": 6,
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "url": "/data/db/ecc-datamart-riops-fc3dps.sqlite3",
+        "url": "/data/db/riops-fc2dps.sqlite3",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
-        "variables": {
-            "vozocrtx": { "envtype": "ocean", "name": "Water X Velocity", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "envtype": "ocean", "name": "Water Y Velocity", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "yc", "xc"] },
-            "votemper": { "envtype": "ocean", "name": "Temperature", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "yc", "xc"] },
-            "vosaline": { "envtype": "ocean", "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
-            "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "density": { "name": "Water Density", "envtype": "ocean", "scale": [1000, 1050], "scale_factor": 1, "unit": "kg/m^3", "equation": "density(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "heatcapacity": { "name": "Heat Capacity", "envtype": "ocean", "scale": [3950, 4220], "scale_factor": 1, "unit": "J/(kg*K)", "equation": "heatcap(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "tempgradient": { "name": "Adiabatic Temp Gradient", "envtype": "ocean", "scale": [-2.9e-5, 1.5e-4], "scale_factor": 1, "unit": "Celsius/db", "equation": "tempgradient(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "deepsoundchannel": { "name": "Deep Sound Channel", "unit": "m", "scale": [0, 1700], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [0, 1400], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "deepsoundchannelbottom": { "name": "Deep Sound Channel Bottom", "unit": "m", "scale": [0, 5000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] }
-        }
-    },
-
-    "glorys4": {
-        "attribution": "GLORYS2V4 from <a href='https://www.mercator-ocean.fr/'>Mercator Ocean</a>",
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/glorys4/aggregated.ncml",
-        "enabled": false,
-        "help": "Global Ocean Reanalysis and Simulation -&nbsp;             <a href=\\\"https://www.mercator-ocean.fr/wp-content/uploads/2015/08/FS-GLORYS2V3_EN.pdf\\\" target=\\\"_new\\\">System Sheet</a>             <ul>                 <li>Global Coverage</li>                 <li>1/4° Mercator grid</li>                 <li>75 vertical z-levels</li>                 <li>Available as monthly averages (January 1993&ndash;December 2014)</li>             </ul>",
-        "name": "GLORYS v4",
-        "quantum": "month",
-        "type": "historical",
-        "time_dim_units": "seconds since 1991-12-04 00:00:00",
-        "lat_var_key": "y",
-        "lon_var_key": "x",
-        "url": "/home/buildadm/ocean-nav/db/GLORYSV4.sqlite3",
-        "variables": {
-            "iicevele": { "name": "Sea Ice East Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s", "zero_centered": "true", "equation": "iicevelu * cos_alpha - iicevelv * sin_alpha" },
-            "iiceveln": { "name": "Sea Ice North Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s", "zero_centered": "true", "equation": "iicevelu * sin_alpha + iicevelv * cos_alpha" },
-            "iicethic": { "hide": "false", "name": "Ice Thickness", "scale": [ 0, 10 ], "scale_factor": 1, "unit": "m" },
-            "iicevelu": { "hide": "false", "name": "Sea Ice X Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s" },
-            "iicevelv": { "hide": "false", "name": "Sea Ice Y Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s" },
-            "iicevele,iiceveln": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [ 0, 1 ] },
-            "ileadfra": { "hide": "false", "name": "Ice Concentration", "scale": [ 0, 1 ], "scale_factor": 1, "unit": "fraction" },
-            "sossheig": { "hide": "false", "name": "Sea Surface Height", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m" },
-            "vozocrte": { "hide": "false", "name": "Water East Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s", "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true" },
-            "vomecrtn": { "hide": "false", "name": "Water North Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s", "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" },
-            "vomecrty": { "hide": "false", "name": "Water Y Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s" },
-            "vozocrtx": { "hide": "false", "name": "Water X Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s" },
-            "vozocrte,vomecrtn": { "hide": "false", "name": "Water Velocity", "scale": [ 0, 3 ], "scale_factor": 1, "unit": "m/s" },
-            "vosaline": { "hide": "false", "name": "Salinity", "scale": [ 30, 40 ], "scale_factor": 1, "unit": "PSU" },
-            "votemper": { "hide": "false", "name": "Temperature", "scale": [ -5, 30 ], "scale_factor": 1, "unit": "Celsius" },
-            "divergence": { "hide": "false", "name": "Water Divergence", "scale": [ -50, 50 ], "scale_factor": 1e6, "unit": "1/10^6 s", "equation": "divergence(vozocrtx, vomecrty, nav_lat, nav_lon)", "zero_centered": "true" },
-            "vorticity": { "hide": "false", "name": "Water Vorticity", "scale": [ -50, 50 ], "scale_factor": 1e6, "unit": "1/10^6 s", "equation": "vorticity(vozocrtx, vomecrty, nav_lat, nav_lon)", "zero_centered": "true" },
-            "sspeed": { "hide": "false", "name": "Speed of Sound", "scale": [ 1400, 1600 ], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(deptht, nav_lat, votemper - 273.15, vosaline)" }
-        }
-    },
-    "cmems_seasonal_climatolog": {
-	"url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
-        "name": "15. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12deg",
-	"quantum": "month",
-        "type": "historical",
-        "time_dim_units": "hours since 1993-01-01",
-        "enabled": true,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
-        "variables": {
-            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-2, 26] },
-            "so": { "name": "Salinity", "unit": "PSU", "scale": [9.5, 38.5] },
-            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
-            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
-            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"], "east_vector_component": "uo", "north_vector_component": "vo" },
-            "vsi": { "name": "Sea Ice North Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
-            "usi": { "name": "Sea Ice East Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
-            "magicevel": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(usi, vsi)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "usi", "north_vector_component": "vsi" },
-            "siconc": { "name": "Sea Ice Concentration", "unit": "fraction", "scale": [0, 1] },
-            "sithick": { "name": "Sea Ice Thickness", "unit": "m", "scale": [0, 1] },
-            "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-2, 26] },
-            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-2, 2] },
-            "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 430] }
-        }
-    },
-    "cmems_monthly_climatology": {
-        "name": "16. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12 deg",
-        "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
-	"quantum": "month",
-        "type": "historical",
-        "time_dim_units": "hours since 1993-01-01",
-        "enabled": true,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "variables": {
-            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-2, 26] },
-            "so": { "name": "Salinity", "unit": "PSU", "scale": [9.5, 38.5] },
-            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
-            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
-            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"], "east_vector_component": "uo", "north_vector_component": "vo" },
-            "vsi": { "name": "Sea Ice North Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
-            "usi": { "name": "Sea Ice East Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
-            "magicevel": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(usi, vsi)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "usi", "north_vector_component": "vsi" },
-            "siconc": { "name": "Sea Ice Concentration", "unit": "fraction", "scale": [0, 1] },
-            "sithick": { "name": "Sea Ice Thickness", "unit": "m", "scale": [0, 1] },
-            "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-2, 26] },
-            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-2, 2] },
-            "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 430] }
+            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
+            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
+            "iicevol": { "name": "Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
+            "somixhgt": { "name": "Turbocline Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [0, 4000] },
+            "iicesurftemp": { "name": "Surface Temp Over Sea Ice", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "iicesurftemp - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
+            "itmecrty": { "name": "Sea Ice Y Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "itzocrtx": { "name": "Sea Ice X Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
+            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] }
         }
     },
-    "glorys4_climatology": {
+    "wcps_2dll": {
         "envtype": ["ocean", "ice"],
-        "url": "/data/db/glorys4_climatology.sqlite3",
-        "name": "GLORYS v4 Climatology",
-        "quantum": "month",
-        "type": "historical",
-        "enabled": false,
-        "time_dim_units": "seconds since 1991-12-04 00:00:00",
+        "url": "/data/db/wcps-2dll.sqlite3",
+        "name": "12. WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/wcps.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "uwindsurf": { "name": "Surface Wind North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-15, 15], "zero_centered": "true" },
+            "vwindsurf": { "name": "Surface Wind East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-15, 15], "zero_centered": "true" },
+            "magwindsurf": { "name": "Suface Wind Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 15], "equation": "magnitude(uwindsurf, vwindsurf)",  "dims": ["time", "latitude", "longitude"] },
+            "vozocrtx": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-0.07, 5], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "tairsurf": { "name": "Surface Air Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-20, 20], "equation": "tairsurf - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-2, 2], "zero_centered": "true" },
+            "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
+            "sokaraml": { "name": "Ocean Mixed Layer Depth", "envtype": "ocean", "unit": "m", "scale": [2, 265] },
+            "iicevol": { "name": "Sea Ice Volume", "envtype": "ice", "unit": "m", "scale": [0, 10] },
+            "itmecrty": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "itzocrtx": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(itmecrty, itzocrtx)", "dims": ["time", "latitude", "longitude"] },
+            "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1], "scale_factor": 1e4},
+            "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "unit": "Nm-1", "scale": [-17, 40], "scale_factor": 1e2 }
+        }
+    },
+    "ciops_east3d": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/ciops_east-pseudo_anal-3d.sqlite3",
+        "name": "13. CIOPS East 3D Pseudo-analysis",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "y",
         "lon_var_key": "x",
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/glorys4/aggregated.ncml",
-        "attribution": "GLORYS2V4 from <a href='https://www.mercator-ocean.fr/'>Mercator Ocean</a>",
-        "help": "Global Ocean Reanalysis and Simulation -&nbsp;             <a href=\\\"https://www.mercator-ocean.fr/wp-content/uploads/2015/08/FS-GLORYS2V3_EN.pdf\\\" target=\\\"_new\\\">System Sheet</a>             <ul>                 <li>Global Coverage</li>                 <li>1/4° Mercator grid</li>                 <li>75 vertical z-levels</li>                 <li>Available as monthly averages (January 1993&ndash;December 2014)</li>             </ul>",
+        "help": " ",
+
         "variables": {
-                "votemper": { "name": "Temperature",        "unit": "Celsius", "scale": [-5, 30] },
-                "vosaline": { "name": "Salinity",           "unit": "PSU", "scale": [30, 40] },
-                "sossheig": { "name": "Sea Surface Height", "unit": "m", "scale": [-3, 3], "zero_centered": "true"  },
-                "vozocrtx": { "name": "Water X Velocity",   "unit": "m/s", "scale": [-3, 3], "zero_centered": "true"  },
-                "vomecrty": { "name": "Water Y Velocity",   "unit": "m/s", "scale": [-3, 3], "zero_centered": "true"  },
-                "ileadfra": { "name": "Ice Concentration",  "unit": "fraction", "scale": [0, 1] },
-                "iicethic": { "name": "Ice Thickness",      "unit": "m", "scale": [0, 10] },
-                "iicevelu": { "name": "Sea Ice X Velocity", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true"  },
-                "iicevelv": { "name": "Sea Ice Y Velocity", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true"  },
-                "east_vel": { "name": "Water East Velocity", "scale": [-3, 3], "scale_factor": 1, "unit": "m/s", "zero_centered": "true" },
-                "north_vel": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true"  }
+            "uo": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "vo": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
+            "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 27], "dims": ["time", "deptht", "nav_lat", "nav_lon"] }
         }
     },
-    "glorysv3_climatology": {
-        "attribution": "GLORYS2V3 from <a href='https://www.mercator-ocean.fr/'>Mercator Ocean</a>",
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/glorys/aggregated.ncml",
-        "enabled": false,
-        "help": "Global Ocean Reanalysis and Simulation             <ul>             <li>Global Coverage</li>             <li>1/4° Mercator grid</li>             <li>75 vertical z-levels</li>             <li>Computed from the monthly averages January 1993&ndash;December 2013</li>             <li>Variables Available:                 <ul>                     <li>Eastward Velocity</li>                     <li>Ice Concentration</li>                     <li>Northward Velocity</li>                     <li>Salinity</li>                     <li>Sea Ice Eastward Velocity</li>                     <li>Sea Ice Northward Velocity</li>                     <li>Sea Ice Thickness</li>                     <li>Sea Ice Velocity</li>                     <li>Sea Surface Height</li>                     <li>Sea Water Velocity</li>                     <li>Temperature</li>                 </ul>             </li>             </ul>",
-        "name": "GLORYSV3 Climatology",
-        "quantum": "month",
-        "type": "historical",
-        "time_dim_units": "seconds since 1991-12-04 00:00:00",
-        "url": "/home/buildadm/ocean-nav/db/GLORYSV3-Climatology.sqlite3",
-        "variables": {
-            "iicethic": { "hide": "false", "name": "Ice Thickness", "scale": [ 0, 10 ], "scale_factor": 1, "unit": "m" },
-            "iicevelu": { "hide": "false", "name": "Sea Ice X Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s" },
-            "iicevelv": { "hide": "false", "name": "Sea Ice Y Velocity", "scale": [ -1, 1 ], "scale_factor": 1, "unit": "m/s" },
-            "iicevelu,iicevelv": { "hide": "false", "name": "Sea Ice Velocity", "scale": [ 0, 1 ], "scale_factor": 1, "unit": "m/s" },
-            "ileadfra": { "hide": "false", "name": "Ice Concentration", "scale": [ 0, 1 ], "scale_factor": 1, "unit": "fraction" },
-            "sossheig": { "hide": "false", "name": "Sea Surface Height", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m" },
-            "vomecrty": { "hide": "false", "name": "Water Y Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s" },
-            "vosaline": { "hide": "false", "name": "Salinity", "scale": [ 30, 40 ], "scale_factor": 1, "unit": "PSU" },
-            "votemper": { "hide": "false", "name": "Temperature", "scale": [ -5, 30 ], "scale_factor": 1, "unit": "Celsius" },
-            "vozocrtx": { "hide": "false", "name": "Water X Velocity", "scale": [ -3, 3 ], "scale_factor": 1, "unit": "m/s" },
-            "vozocrtx,vomecrty": { "hide": "false", "name": "Water Velocity", "scale": [ 0, 3 ], "scale_factor": 1, "unit": "m/s" }
-        }
-    },
-    "levitus98_phc21": {
-        "attribution": "Unknown",
+    "ciops_east": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/ciops_east-pseudo_anal.sqlite3",
+        "name": "14. CIOPS East Surface Pseudo-analysis",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "enabled": false,
-        "help": "Combination of Levitus98 and PHC 2.1             <ul>             <li>Global Coverage</li>             <li>Tri-polar ORCA grid 1/4° resolution (ORCA025), &lt; 15km in Arctic</li>             <li>50 vertical z-levels</li>             <li>Variables Available:                 <ul>                     <li>Salinity</li>                     <li>Water Temperature</li>                 </ul>             </li>             </ul>",
-        "name": "World Ocean Atlas Climatology",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "y",
+        "lon_var_key": "x",
+        "help": " ",
+
+        "variables": {
+            "uos": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "vos": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "sos": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
+            "tos": { "name": "Sea Temperature", "unit": "Celsius", "scale": [-1, 27] }
+        }
+    },
+    "ciops_west3d": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/ciops_west-pseudo_anal-3d.sqlite3",
+        "name": "15. CIOPS West 3D Pseudo-analysis",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "y",
+        "lon_var_key": "x",
+        "help": " ",
+
+        "variables": {
+            "uo": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "vo": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 34] },
+            "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 18], "dims": ["time", "deptht", "nav_lat", "nav_lon"] }
+        }
+    },
+    "ciops_west": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/ciops_west-pseudo_anal.sqlite3",
+        "name": "16. CIOPS West Surface Pseudo-analysis",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "y",
+        "lon_var_key": "x",
+        "help": " ",
+
+        "variables": {
+            "uos": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "vos": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "sos": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 34] },
+            "tos": { "name": "Sea Temperature", "unit": "Celsius", "scale": [-1, 18] }
+        }
+    },
+    "gsl_3d": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/gsl-3d.sqlite3",
+        "name": "17. Gulf of St. Lawrence 3D",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "y",
+        "lon_var_key": "x",
+        "help": " ",
+
+        "variables": {
+            "vomecrty": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "vozocrtx": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "vozocrtx", "north_vector_component": "vozocrty" },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
+        }
+    },
+    "gsl_surface": {
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/gsl-surface-combined.sqlite3",
+        "name": "18. Gulf of St. Lawrence Surface",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "y",
+        "lon_var_key": "x",
+        "help": " ",
+
+        "variables": {
+            "somecrty": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "sozocrtx": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "magwatervel": { "name": "ocean current magnitude", "envtype": "ocean", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"] },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "y", "x"] },
+            "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
+        }
+    },
+    "cmems-global-analysis-forecast-phy-001-024_hourly": {
+        "url": "/data/db/global-analysis-forecast-phy-001-024-hourly-t-u-v-ssh.sqlite3",
+        "name": "19. CMEMS Global Ocean PHYS Analysis (Hourly) 1/12 deg",
+        "quantum": "hour",
+        "type": "historical",
+        "time_dim_units": "hours since 1950-01-01",
+        "enabled": true,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/cmems-global-analysis-forecast-phy-001-024.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-5, 30] },
+            "so": { "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
+            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"] },
+            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-3, 3] }
+        }
+    },
+    "cmems-global-analysis-forecast-phy-001-024_monthly": {
+        "url": "/data/db/global-analysis-forecast-phy-001-024-monthly.sqlite3",
+        "name": "20. CMEMS Global Ocean PHYS Analysis (Monthly) 1/12 deg",
         "quantum": "month",
         "type": "historical",
-        "time_dim_units": "seconds since 1950-01-01 00: 00: 00",
-        "url": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "time_dim_units": "hours since 1950-01-01",
+        "enabled": true,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/cmems-global-analysis-forecast-phy-001-024.html\" target=\"_new\">link</a>.",
         "variables": {
-            "vosaline": { "hide": "false", "name": "Salinity", "scale": [ 30, 40 ], "scale_factor": 1, "unit": "PSU" },
-            "votemper": { "hide": "false", "name": "Temperature", "scale": [ -5, 30 ], "scale_factor": 1, "unit": "Celsius" }
+            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-5, 30] },
+            "so": { "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
+            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"] },
+            "vsi": { "name": "Sea Ice North Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "usi": { "name": "Sea Ice East Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "magicevel": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(usi, vsi)",  "dims": ["time", "depth", "latitude", "longitude"] },
+            "siconc": { "name": "Sea Ice Concentration", "unit": "fraction", "scale": [0, 1] },
+            "sithick": { "name": "Sea Ice Thickness", "unit": "m", "scale": [0, 10] },
+            "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-5, 30] },
+            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-3, 3] },
+            "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 4000] }
         }
     },
     "cmems_daily": {
         "url": "/data/db/cmems_daily.sqlite3",
-        "name": "13. CMEMS Global Ocean PHYS Reanalysis (Daily) 1/12 deg",
+        "name": "21. CMEMS Global Ocean PHYS Reanalysis (Daily) 1/12 deg",
         "quantum": "day",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -660,7 +564,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-GLOBAL_REANALYSIS_PHY_001_030.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_phy_001_030.html\" target=\"_new\">link</a>.",
         "variables": {
             "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
@@ -679,7 +583,7 @@
     },
     "cmems_monthly": {
         "url": "/data/db/cmems_monthly.sqlite3",
-        "name": "14. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
+        "name": "22. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -703,6 +607,61 @@
             "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-5, 30] },
             "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-3, 3] },
             "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 4000] }
+        }
+    },
+    "cmems_monthly_climatology": {
+        "name": "23. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12 deg",
+        "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
+	"quantum": "month",
+        "type": "historical",
+        "time_dim_units": "hours since 1993-01-01",
+        "enabled": true,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "variables": {
+            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-2, 26] },
+            "so": { "name": "Salinity", "unit": "PSU", "scale": [9.5, 38.5] },
+            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"], "east_vector_component": "uo", "north_vector_component": "vo" },
+            "vsi": { "name": "Sea Ice North Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
+            "usi": { "name": "Sea Ice East Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
+            "magicevel": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(usi, vsi)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "usi", "north_vector_component": "vsi" },
+            "siconc": { "name": "Sea Ice Concentration", "unit": "fraction", "scale": [0, 1] },
+            "sithick": { "name": "Sea Ice Thickness", "unit": "m", "scale": [0, 1] },
+            "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-2, 26] },
+            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-2, 2] },
+            "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 430] }
+        }
+    },
+    "cmems_seasonal_climatolog": {
+	"url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
+        "name": "24. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12deg",
+	"quantum": "month",
+        "type": "historical",
+        "time_dim_units": "hours since 1993-01-01",
+        "enabled": true,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-2, 26] },
+            "so": { "name": "Salinity", "unit": "PSU", "scale": [9.5, 38.5] },
+            "vo": { "name": "Water North Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "uo": { "name": "Water East Velocity", "unit": "m/s", "scale": [-3, 3] },
+            "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "latitude", "longitude"], "east_vector_component": "uo", "north_vector_component": "vo" },
+            "vsi": { "name": "Sea Ice North Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
+            "usi": { "name": "Sea Ice East Velocity", "unit": "m/s", "scale": [-0.5, 0.5] },
+            "magicevel": { "name": "Sea Ice Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(usi, vsi)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "usi", "north_vector_component": "vsi" },
+            "siconc": { "name": "Sea Ice Concentration", "unit": "fraction", "scale": [0, 1] },
+            "sithick": { "name": "Sea Ice Thickness", "unit": "m", "scale": [0, 1] },
+            "bottomT": { "name": "Sea Floor Temperature", "unit": "Celsius", "scale": [-2, 26] },
+            "zos": { "name": "Sea Surface Height", "unit": "m", "scale": [-2, 2] },
+            "mlotst": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 430] }
         }
     },
     "cmems_ran-arc-day": {
@@ -757,33 +716,8 @@
             "mlp": { "name": "Ocean Mixed Layer Thickness", "unit": "m", "scale": [0, 4000] }
         }
     },
-    "freebiorys2v4_monthly": {
-        "name": "18. CMEMS Global Ocean Reanalysis Bio (Monthly)",
-        "quantum": "month",
-        "type": "historical",
-        "time_dim_units": "hours since 1950-01-01",
-        "url": "/data/db/cmems-global-reanalysis-bio-001-029-monthly.sqlite3",
-        "enabled": true,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-GLOBAL_REANALYSIS_BIO_001_029.html\" target=\"_new\">link</a>.",
-        "variables": {
-            "phyc": { "name": "Total Phytoplankton", "unit": "mmol/m^3", "scale": [0, 13] },
-            "ph": { "name": "PH", "unit": "1", "scale": [7, 8.3] },
-            "spco2": { "name": "Surface Partial Pressure of CO2", "unit": "Pa", "scale": [25, 78] },
-            "fe": { "name": "Dissolved Iron", "unit": "mmol/m^3", "scale": [4.9e-6, 0.02] },
-            "nppv": { "name": "Total Primary Production of Phyto", "unit": "mmol/m^3/day", "scale": [0, 100] },
-            "o2": { "name": "Dissolved Oxygen", "unit": "mmol/m^3", "scale": [0, 410] },
-            "si": { "name": "Dissolved Silicate", "unit": "mmol/m^3", "scale": [0, 77] },
-            "po4": { "name": "Phosphate Concentration", "unit": "mmol/m^3", "scale": [0, 3] },
-            "no3": { "name": "Nitrate Concentration", "unit": "mmol/m^3", "scale": [0, 13.5] },
-            "chl": { "name": "Total Chlorophyll", "unit": "mg/m^3", "scale": [0.03, 4.7] }
-        }
-    },
     "freebiorys2v4_daily": {
-        "name": "17. CMEMS Global Ocean Reanalysis Bio (Daily)",
+        "name": "25. CMEMS Global Ocean Reanalysis Bio (Daily)",
         "quantum": "day",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -793,7 +727,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-GLOBAL_REANALYSIS_BIO_001_029.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_bio_001_029.html\" target=\"_new\">link</a>.",
         "variables": {
             "phyc": { "name": "Total Phytoplankton", "unit": "mmol/m^3", "scale": [0, 13] },
             "ph": { "name": "PH", "unit": "1", "scale": [7, 8.3] },
@@ -807,6 +741,31 @@
             "chl": { "name": "Total Chlorophyll", "unit": "mg/m^3", "scale": [0.03, 4.7] }
         }
      },
+    "freebiorys2v4_monthly": {
+        "name": "26. CMEMS Global Ocean Reanalysis Bio (Monthly)",
+        "quantum": "month",
+        "type": "historical",
+        "time_dim_units": "hours since 1950-01-01",
+        "url": "/data/db/cmems-global-reanalysis-bio-001-029-monthly.sqlite3",
+        "enabled": true,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_bio_001_029.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "phyc": { "name": "Total Phytoplankton", "unit": "mmol/m^3", "scale": [0, 13] },
+            "ph": { "name": "PH", "unit": "1", "scale": [7, 8.3] },
+            "spco2": { "name": "Surface Partial Pressure of CO2", "unit": "Pa", "scale": [25, 78] },
+            "fe": { "name": "Dissolved Iron", "unit": "mmol/m^3", "scale": [4.9e-6, 0.02] },
+            "nppv": { "name": "Total Primary Production of Phyto", "unit": "mmol/m^3/day", "scale": [0, 100] },
+            "o2": { "name": "Dissolved Oxygen", "unit": "mmol/m^3", "scale": [0, 410] },
+            "si": { "name": "Dissolved Silicate", "unit": "mmol/m^3", "scale": [0, 77] },
+            "po4": { "name": "Phosphate Concentration", "unit": "mmol/m^3", "scale": [0, 3] },
+            "no3": { "name": "Nitrate Concentration", "unit": "mmol/m^3", "scale": [0, 13.5] },
+            "chl": { "name": "Total Chlorophyll", "unit": "mg/m^3", "scale": [0.03, 4.7] }
+        }
+    },
     "arc-rean-bio_daily": {
         "name": "MyOcean Arctic bio pilot reanalysis TOPAZ4(2007-2010) Daily",
         "quantum": "day",
@@ -849,89 +808,9 @@
             "zbiomass": { "name": "Zooplankton Concentration", "unit": "mmol/m^3", "scale": [0, 1.1e-3] }
         }
      },
-     "sjap": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/sjap1003d.sqlite3",
-        "name": "Port of St. John",
-        "quantum": "day",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "IPSL",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help" : "",
-        "variables": {
-            "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.34, 0.34], "zero_centered": "true" },
-            "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.35, 0.35], "zero_centered": "true" },
-            "ubar": { "name": "Ocean Current (i-axis)", "unit": "m/s", "scale": [-0.30, 0.23]},
-            "vbar": { "name": "Ocean Current (j-axis)", "unit": "m/s", "scale": [-0.12, 0.07]},
-            "tauuo": { "name": "Wind Stress (i-axis)", "unit": "N/m^2", "scale": [0, 0.13]},
-            "tauvo": { "name": "Wind Stress (j-axis)", "unit": "N/m^2", "scale": [0, 0.07]},
-            "thetao": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [0, 18.1] },
-            "mldr10_1": { "name": "Ocean Mixed Layer Depth", "unit": "m", "scale": [0, 53.8] },
-            "heatc": { "name": "Heat Content", "unit": "J/m^2", "scale": [0, 5e9] },
-            "saltc": { "name": "Salinity Concentration", "envtype": "ocean", "unit": "1e-3*kg/m^2", "scale": [0, 3.8e6] },
-            "ssh_ib": { "name": "Sea Surface Height Inverse Barometer", "envtype": "ocean", "unit": "m", "scale": [-0.21, -0.19] },
-            "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 32.5] },
-            "zos": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-0.61, 0.30] }
-        }
-    },
-    "bof": {
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/bof1803d.sqlite3",
-        "name": "Bay of Fundy",
-        "quantum": "day",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "IPSL",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help" : "",
-        "variables": {
-            "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.4, 0.4], "zero_centered": "true" },
-            "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.45, 0.45], "zero_centered": "true" },
-            "ubar": { "name": "Ocean Current (i-axis)", "unit": "m/s", "scale": [-0.3, 0.2]},
-            "vbar": { "name": "Ocean Current (j-axis)", "unit": "m/s", "scale": [-0.35, 0.15]},
-            "tauuo": { "name": "Wind Stress (i-axis)", "unit": "N/m^2", "scale": [0, 0.07]},
-            "tauvo": { "name": "Wind Stress (j-axis)", "unit": "N/m^2", "scale": [-0.04, 0.015]},
-            "thetao": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [0, 15] },
-            "mldr10_1": { "name": "Ocean Mixed Layer Depth", "unit": "m", "scale": [0, 94] },
-            "heatc": { "name": "Heat Content", "unit": "J/m^2", "scale": [0, 6.7e9] },
-            "saltc": { "name": "Salinity Concentration", "envtype": "ocean", "unit": "1e-3*kg/m^2", "scale": [0, 7.3e6] },
-            "ssh_ib": { "name": "Sea Surface Height Inverse Barometer", "envtype": "ocean", "unit": "m", "scale": [0.1, 0.15] },
-            "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 33] },
-            "zos": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-0.55, 0.72] }
-        }
-    },
-    "salishseacast_2d_ssh": {
-        "enabled": true,
-        "name": "22. SalishSeaCast Sea Surface Height",
-        "envtype": ["ocean"],
-        "type": "historical",
-        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
-        "geo_ref": {
-            "url": "/data/grids/salishsea/geo_reference_201702.nc",
-            "drop_variables": ["bathymetry"]
-        },
-        "quantum": "hour",
-        "time_dim_units": "seconds since 1970-01-01 00:00:00",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": " Document <a href=\"../data-help/salishseacast_2d_ssh.html\" target=\"_new\">link</a>.",
-        "variables": {
-            "ssh": { "name":  "Sea Surface Height", "unit":  "m", "scale":  [-4, 4], "zero_centered": "true" }
-        }
-    },
     "salishseacast_3d_biology": {
         "enabled": true,
-        "name": "19. SalishSeaCast 3D Biology",
+        "name": "27. SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
         "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DBiologyFields1hV19-05",
@@ -959,30 +838,9 @@
             "silicon": { "name":  "Silicon Concentration", "unit":  "mmol m-3", "scale":  [0, 70] }
         }
     },
-    "salishseacast_3d_tracers": {
-        "enabled": true,
-        "name": "21. SalishSeaCast 3D Salinity & Temperature",
-        "envtype": ["ocean"],
-        "type": "historical",
-        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DTracerFields1hV19-05",
-        "geo_ref": {
-            "url": "/data/grids/salishsea/geo_reference_201702.nc",
-            "drop_variables": ["bathymetry"]
-        },
-        "quantum": "hour",
-        "time_dim_units": "seconds since 1970-01-01 00:00:00",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": " Document <a href=\"../data-help/salishseacast_3d_tracers.html\" target=\"_new\">link</a>.",
-        "variables": {
-            "salinity": { "name":  "Salinity", "unit":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
-            "temperature": { "name":  "Conservative Temperature", "unit":  "Celcius", "scale":  [4, 20] }
-        }
-    },
     "salishseacast_3d_currents": {
         "enabled": true,
-        "name": "20. SalishSeaCast 3D Currents",
+        "name": "28. SalishSeaCast 3D Currents",
         "envtype": ["ocean"],
         "type": "historical",
         "url": [
@@ -1004,6 +862,47 @@
             "uVelocity": { "name":  "Eastward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
             "vVelocity": { "name":  "Northward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
             "current_speed": { "name":  "Speed of Current", "unit": "m/s", "scale":  [0, 8], "equation": "unstaggered_speed(uVelocity, vVelocity)", "dims": ["time", "depth", "gridY", "gridX"] }
+        }
+    },
+    "salishseacast_3d_tracers": {
+        "enabled": true,
+        "name": "29. SalishSeaCast 3D Salinity & Temperature",
+        "envtype": ["ocean"],
+        "type": "historical",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DTracerFields1hV19-05",
+        "geo_ref": {
+            "url": "/data/grids/salishsea/geo_reference_201702.nc",
+            "drop_variables": ["bathymetry"]
+        },
+        "quantum": "hour",
+        "time_dim_units": "seconds since 1970-01-01 00:00:00",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
+        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
+        "help": " Document <a href=\"../data-help/salishseacast_3d_tracers.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "salinity": { "name":  "Salinity", "unit":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
+            "temperature": { "name":  "Conservative Temperature", "unit":  "Celcius", "scale":  [4, 20] }
+        }
+    },
+    "salishseacast_2d_ssh": {
+        "enabled": true,
+        "name": "30. SalishSeaCast Sea Surface Height",
+        "envtype": ["ocean"],
+        "type": "historical",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
+        "geo_ref": {
+            "url": "/data/grids/salishsea/geo_reference_201702.nc",
+            "drop_variables": ["bathymetry"]
+        },
+        "quantum": "hour",
+        "time_dim_units": "seconds since 1970-01-01 00:00:00",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
+        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
+        "help": " Document <a href=\"../data-help/salishseacast_2d_ssh.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "ssh": { "name":  "Sea Surface Height", "unit":  "m", "scale":  [-4, 4], "zero_centered": "true" }
         }
     }
 }
