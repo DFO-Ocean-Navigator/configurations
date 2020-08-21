@@ -386,8 +386,8 @@
         "help": " ",
 
         "variables": {
-            "uo": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
-            "vo": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
             "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
             "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 27], "dims": ["time", "deptht", "nav_lat", "nav_lon"] }
         }
@@ -408,8 +408,8 @@
         "help": " ",
 
         "variables": {
-            "uos": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
-            "vos": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "uos": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "vos": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
             "sos": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
             "tos": { "name": "Sea Temperature", "unit": "Celsius", "scale": [-1, 27] }
         }
@@ -430,8 +430,8 @@
         "help": " ",
 
         "variables": {
-            "uo": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
-            "vo": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
             "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 34] },
             "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 18], "dims": ["time", "deptht", "nav_lat", "nav_lon"] }
         }
@@ -452,8 +452,8 @@
         "help": " ",
 
         "variables": {
-            "uos": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
-            "vos": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "uos": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
+            "vos": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-0.5, 0.5], "zero_centered": "true" },
             "sos": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 34] },
             "tos": { "name": "Sea Temperature", "unit": "Celsius", "scale": [-1, 18] }
         }
@@ -474,8 +474,8 @@
         "help": " ",
 
         "variables": {
-            "vomecrty": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vozocrtx": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "vomecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "vozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "vozocrtx", "north_vector_component": "vozocrty" },
             "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
@@ -497,9 +497,9 @@
         "help": " ",
 
         "variables": {
-            "somecrty": { "name": "ocean current along j-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "sozocrtx": { "name": "ocean current along i-axis", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "magwatervel": { "name": "ocean current magnitude", "envtype": "ocean", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"] },
+            "somecrty": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "sozocrtx": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Current Magnitude", "envtype": "ocean", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"] },
             "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "y", "x"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
         }
