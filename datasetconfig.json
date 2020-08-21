@@ -515,7 +515,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-global-analysis-forecast-phy-001-024.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-GLOBAL_ANALYSIS_FORECAST_PHY_001_024.html \" target=\"_new\">link</a>.",
         "variables": {
             "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
@@ -536,7 +536,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_phy_001_030.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-GLOBAL_ANALYSIS_FORECAST_PHY_001_024.html \" target=\"_new\">link</a>.",
         "variables": {
             "thetao": { "name": "Temperature", "unit": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "unit": "PSU", "scale": [30, 40] },
@@ -559,7 +559,7 @@
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
-        "enabled": true,
+        "enabled": false,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
@@ -583,7 +583,7 @@
     },
     "cmems_monthly": {
         "url": "/data/db/cmems_monthly.sqlite3",
-        "name": "22. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
+        "name": "21. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -639,7 +639,7 @@
     },
     "cmems_monthly_climatology": {
         "name": "24. CMEMS Global Ocean PHYS Reanalysis Seansonal Climatology 1/12 deg",
-        "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/glorys12_climatology_monthly.html\" target=\"_new\">link</a>.",
 	"quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
@@ -727,7 +727,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_bio_001_029.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-GLOBAL_REANALYSIS_BIO_001_029.html\" target=\"_new\">link</a>.",
         "variables": {
             "phyc": { "name": "Total Phytoplankton", "unit": "mmol/m^3", "scale": [0, 13] },
             "ph": { "name": "PH", "unit": "1", "scale": [7, 8.3] },
@@ -752,7 +752,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/cmems-global_reanalysis_bio_001_029.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"../data-help/cmems-GLOBAL_REANALYSIS_BIO_001_029.html\" target=\"_new\">link</a>.",
         "variables": {
             "phyc": { "name": "Total Phytoplankton", "unit": "mmol/m^3", "scale": [0, 13] },
             "ph": { "name": "PH", "unit": "1", "scale": [7, 8.3] },
