@@ -38,8 +38,8 @@
         "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
 
         "variables": {
@@ -107,8 +107,8 @@ e", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector
         "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
 
         "variables": {
@@ -183,8 +183,8 @@ e", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector
         "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "help": " Document <a href=\"../data-help/giops-surface.html\" target=\"_new\">link</a>.",
 
         "variables": {
@@ -250,8 +250,8 @@ e", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector
         "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "help": " Document <a href=\"../data-help/giops-3d.html\" target=\"_new\">link</a>.",
 
         "variables": {
@@ -310,8 +310,8 @@ e", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector
         "url": "/data/db/riops-fc3dps.sqlite3",
         "grid_angle_file_url": "/data/grids/ecc/riops/grid_angle_riops_ps5km60n.nc"
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "yc",
-        "lon_var_key": "xc",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "variables": {
             "vozocrtx": { "envtype": "ocean", "name": "Water X Velocity", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "envtype": "ocean", "name": "Water Y Velocity", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -344,8 +344,8 @@ e", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector
         "url": "/data/db/riops-fc2dps.sqlite3",
         "grid_angle_file_url": "/data/grids/ecc/riops/grid_angle_riops_ps5km60n.nc",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
         "variables": {
             "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
             "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "unit": "fraction", "scale": [0, 1] },
