@@ -245,7 +245,7 @@
         "quantum": "day",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "enabled": true,
+        "enabled": false,
         "cache": 6,
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
@@ -275,7 +275,7 @@
         "envtype": ["ocean", "ice"],
         "enabled": true,
         "help": " Document <a href=\"../data-help/riops-surface.html\" target=\"_new\">link</a>.",
-	"name": "09. CCG RIOPS Forecast Surface - LatLon",
+	"name": "08. CCG RIOPS Forecast Surface - LatLon",
         "quantum": "hour",
         "type": "forecast",
         "cache": 6,
@@ -301,7 +301,7 @@
         "envtype": ["ocean"],
         "enabled": true,
         "help": " Document <a href=\"../data-help/riops-3d.html\" target=\"_new\">link</a>.",
-        "name": "10. RIOPS Forecast 3D - Polar Stereographic",
+        "name": "09. RIOPS Forecast 3D - Polar Stereographic",
         "quantum": "hour",
         "type": "forecast",
         "cache": 6,
@@ -335,7 +335,7 @@
         "envtype": ["ocean"],
         "enabled": true,
         "help": " Document <a href=\"../data-help/riops-surface.html\" target=\"_new\">link</a>.",
-        "name": "11. RIOPS Forecast Surface - Polar Stereographic",
+        "name": "10. RIOPS Forecast Surface - Polar Stereographic",
         "quantum": "hour",
         "type": "forecast",
         "cache": 6,
@@ -366,7 +366,7 @@
     "wcps_2dll": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/wcps-2dll.sqlite3",
-        "name": "12. WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
+        "name": "11. WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -401,7 +401,7 @@
     "ciops_east3d": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/ciops_east-pseudo_anal-3d.sqlite3",
-        "name": "13. CIOPS East 3D Pseudo-analysis",
+        "name": "12. CIOPS East 3D Pseudo-analysis",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -423,7 +423,7 @@
     "ciops_east": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/ciops_east-pseudo_anal.sqlite3",
-        "name": "14. CIOPS East Surface Pseudo-analysis",
+        "name": "13. CIOPS East Surface Pseudo-analysis",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -445,7 +445,7 @@
     "ciops_west3d": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/ciops_west-pseudo_anal-3d.sqlite3",
-        "name": "15. CIOPS West 3D Pseudo-analysis",
+        "name": "14. CIOPS West 3D Pseudo-analysis",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -467,7 +467,7 @@
     "ciops_west": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/ciops_west-pseudo_anal.sqlite3",
-        "name": "16. CIOPS West Surface Pseudo-analysis",
+        "name": "15. CIOPS West Surface Pseudo-analysis",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -490,7 +490,7 @@
         "envtype": ["ocean", "ice"],
         "url": "/data/db/gsl-3d.sqlite3",
         "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "17. Gulf of St. Lawrence 3D",
+        "name": "16. Gulf of St. Lawrence 3D",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -516,7 +516,7 @@
         "envtype": ["ocean", "ice"],
         "url": "/data/db/gsl-surface-combined.sqlite3",
         "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "18. Gulf of St. Lawrence Surface",
+        "name": "17. Gulf of St. Lawrence Surface",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -540,7 +540,7 @@
     },
     "cmems-global-analysis-forecast-phy-001-024_hourly": {
         "url": "/data/db/global-analysis-forecast-phy-001-024-hourly-t-u-v-ssh.sqlite3",
-        "name": "19. CMEMS Global Ocean PHYS Analysis (Hourly) 1/12 deg",
+        "name": "18. CMEMS Global Ocean PHYS Analysis (Hourly) 1/12 deg",
         "quantum": "hour",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -561,7 +561,7 @@
     },
     "cmems-global-analysis-forecast-phy-001-024_monthly": {
         "url": "/data/db/global-analysis-forecast-phy-001-024-monthly.sqlite3",
-        "name": "20. CMEMS Global Ocean PHYS Analysis (Monthly) 1/12 deg",
+        "name": "19. CMEMS Global Ocean PHYS Analysis (Monthly) 1/12 deg",
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -589,7 +589,7 @@
     },
     "cmems_daily": {
         "url": "/data/db/cmems_daily.sqlite3",
-        "name": "21. CMEMS Global Ocean PHYS Reanalysis (Daily) 1/12 deg",
+        "name": "20. CMEMS Global Ocean PHYS Reanalysis (Daily) 1/12 deg",
         "quantum": "day",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -617,7 +617,7 @@
     },
     "cmems_monthly": {
         "url": "/data/db/cmems_monthly.sqlite3",
-        "name": "22. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
+        "name": "21. CMEMS Global Ocean PHYS Reanalysis (Monthly) 1/12 deg",
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -644,7 +644,7 @@
         }
     },
     "cmems_monthly_climatology": {
-        "name": "23. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12 deg",
+        "name": "22. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12 deg",
         "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
 	"quantum": "month",
         "type": "historical",
@@ -672,7 +672,7 @@
     },
     "cmems_seasonal_climatolog": {
 	"url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
-        "name": "24. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12deg",
+        "name": "23. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12deg",
 	"quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
@@ -751,7 +751,7 @@
         }
     },
     "freebiorys2v4_daily": {
-        "name": "25. CMEMS Global Ocean Reanalysis Bio (Daily)",
+        "name": "24. CMEMS Global Ocean Reanalysis Bio (Daily)",
         "quantum": "day",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -776,7 +776,7 @@
         }
      },
     "freebiorys2v4_monthly": {
-        "name": "26. CMEMS Global Ocean Reanalysis Bio (Monthly)",
+        "name": "25. CMEMS Global Ocean Reanalysis Bio (Monthly)",
         "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1950-01-01",
@@ -844,7 +844,7 @@
      },
     "salishseacast_3d_biology": {
         "enabled": true,
-        "name": "27. SalishSeaCast 3D Biology",
+        "name": "26. SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
         "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DBiologyFields1hV19-05",
@@ -874,7 +874,7 @@
     },
     "salishseacast_3d_currents": {
         "enabled": true,
-        "name": "28. SalishSeaCast 3D Currents",
+        "name": "27. SalishSeaCast 3D Currents",
         "envtype": ["ocean"],
         "type": "historical",
         "url": [
@@ -921,7 +921,7 @@
     },
     "salishseacast_2d_ssh": {
         "enabled": true,
-        "name": "30. SalishSeaCast Sea Surface Height",
+        "name": "29. SalishSeaCast Sea Surface Height",
         "envtype": ["ocean"],
         "type": "historical",
         "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
