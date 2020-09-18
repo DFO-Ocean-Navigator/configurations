@@ -1,7 +1,7 @@
 {
     "wcps_2dll": {
         "envtype": ["ocean", "ice"],
-        "url": "/data/db/wcps-2dll.sqlite3",
+        "url": "/home/sdfo504/ocean-nav/netcdf-timestamp-mapper/build/db/wcps.sqlite3",
         "name": "WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
         "quantum": "hour",
         "type": "forecast",
@@ -36,7 +36,7 @@
     },
     "giops_day": {
         "envtype": ["ocean", "ice"],
-        "url": "/home/sdfo504/ocean-nav/netcdf-timestamp-mapper/build/db/giops_forecast_day_3dll.sqlite3",
+        "url": "/home/sdfo504/ocean-nav/netcdf-timestamp-mapper/build/db/giops_forecast_10day_3dll.sqlite3",
         "name": "GIOPS 10 Day Forecast 3D - LatLon",
         "quantum": "day",
         "type": "forecast",
@@ -63,7 +63,7 @@
     },
     "giops_fc_3dps": {
         "envtype": ["ocean", "ice"],
-        "url": "/home/sdfo504/ocean-nav/netcdf-timestamp-mapper/build/db/giops_forecast_day_3dps.sqlite3",
+        "url": "/home/sdfo504/ocean-nav/netcdf-timestamp-mapper/build/db/giops_forecast_10day_3dps.sqlite3",
         "name": "GIOPS 10 Day Forecast 3D - Polar Stereographic",
         "quantum": "day",
         "type": "forecast",
