@@ -288,7 +288,7 @@
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector_component": "vomecrty" },
             "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
             "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "unit": "m", "scale": [-3, 3], "zero_centered": "true" },
