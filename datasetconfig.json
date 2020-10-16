@@ -921,7 +921,7 @@
     },
     "salishseacast_2d_ssh": {
         "enabled": true,
-        "name": "29. SalishSeaCast Sea Surface Height",
+        "name": "30. SalishSeaCast Sea Surface Height",
         "envtype": ["ocean"],
         "type": "historical",
         "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
