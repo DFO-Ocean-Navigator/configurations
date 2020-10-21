@@ -46,7 +46,7 @@
             "vozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "hide": "true","name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" , "dims": ["time", "depth", "yc", "xc"] },
-            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "yc", "xc"] },
+            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "depth", "yc", "xc"] },
             "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "yc", "xc"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
             "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "yc", "xc"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [30, 40] },
@@ -503,12 +503,12 @@
         "help": " ",
 
         "variables": {
-            "vomecrty": { "hide": "true", "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vozocrtx": { "hide": "true", "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" , "dims": ["time", "depth", "yc", "xc"] },
-            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "yc", "xc"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "yc", "xc"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "yc", "xc"] },
+            "vomecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "vozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "depth", "y", "x"] },
+            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "depth", "y", "x"] },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
+            "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
         }
     },
@@ -529,11 +529,11 @@
         "help": " ",
 
         "variables": {
-            "somecrty": { "hide": "true", "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "sozocrtx": { "hide": "true", "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "somecrtn": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "somecrtx * sin_alpha + somecrty * cos_alpha", "zero_centered": "true" , "dims": ["time", "y", "x"] },
-            "somecrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "somecrtx * cos_alpha - somecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "y", "x"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "somecrte", "north_vector_component": "somecrtn" },
+            "somecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "sozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
+            "somecrtn": { "name": "Water North Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "somecrtx * sin_alpha + somecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "y", "x"] },
+            "somecrte": { "name": "Water East Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-3, 3], "equation": "somecrtx * cos_alpha - somecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "y", "x"] },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"], "east_vector_component": "somecrte", "north_vector_component": "somecrtn" },
             "votemper": { "name": "Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "y", "x"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [2, 35] }
         }
