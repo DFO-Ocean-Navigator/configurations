@@ -644,7 +644,8 @@
         }
     },
     "cmems_monthly_climatology": {
-        "name": "22. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12 deg",
+        "name": "22. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12 deg",
+	"url": "/data/db/mercatorglorys12v1_gl12_mean_monthly.sqlite3",
         "help": " Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
 	"quantum": "month",
         "type": "historical",
@@ -671,8 +672,8 @@
         }
     },
     "cmems_seasonal_climatolog": {
+        "name": "23. CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12deg",
 	"url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
-        "name": "23. CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12deg",
 	"quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
