@@ -29,8 +29,7 @@
 
     "giops_day_zarr": {
         "envtype": ["ocean", "ice"],
-        "url": "/data/db/giops-fc3dll-10day.sqlite3",
-        "url_zarr": "/data/zarr_test/zarr_test_3.zarr",
+        "url": "/data/zarr_test/zarr_test.zarr",
         "name": "01. GIOPS 10 day Forecast 3D - LatLon",
         "quantum": "day",
         "type": "forecast",
