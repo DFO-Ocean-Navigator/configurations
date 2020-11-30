@@ -360,8 +360,7 @@
             "isnowvol": { "name": "Snow Volume", "envtype": "ice", "unit": "cm", "scale": [0, 2000] },
             "itmecrty": { "hide": "true", "name": "Sea Ice Y Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
             "itzocrtx": { "hide": "true", "name": "Sea Ice X Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "itzocrte": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "itzocrtx * cos_alpha - itmecrty * sin_alpha"
-, "zero_centered": "true", "dims": ["time", "yc", "xc"] },
+            "itzocrte": { "name": "Sea Ice East Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "itzocrtx * cos_alpha - itmecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "yc", "xc"] },
             "itmecrtn": { "name": "Sea Ice North Velocity", "envtype": "ice", "unit": "m/s", "scale": [-1, 1], "equation": "itzocrtx * sin_alpha + itmecrty * cos_alpha", "zero_centered": "true", "dims": ["time", "yc", "xc"] },
             "magicevel": { "name": "Sea Ice Velocity", "envtype": "ice", "unit": "m/s", "scale": [0, 1], "equation": "magnitude(itzocrtx, itmecrty)", "dims": ["time", "yc", "xc"], "east_vector_component": "itzocrte", "north_vector_component": "itmecrtn" },
             "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "unit": "Nm-1", "scale": [-1, 1] },
