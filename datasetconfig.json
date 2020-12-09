@@ -2,6 +2,7 @@
     "giops_day": {
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc3dll-10day.sqlite3",
+	"bathymetry_file_url": "/data/grids/ecc/misc/lat_lon/bathy_meter_giops_latlon_0.2deg_reformatted_lonlatupdate.nc",
         "name": "01. GIOPS 10 day Forecast 3D - LatLon",
         "quantum": "day",
         "type": "forecast",
@@ -23,7 +24,8 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "scale_factor": 1, "unit": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "unit": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "unit": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] }
+            "deepsoundchannelbottom": { "name": "Critical Depth", "unit": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+	    "depthexcess": { "name": "Depth Excess", "unit": "m", "scale": [0, 1000], "equation": "depthexcess([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] }
         }
     },
     "giops_fc_10day_3dps": {
