@@ -163,6 +163,7 @@
         "type": "forecast",
         "cache": 6,
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
+	"bathymetry_file_url": "/data/grids/ecc/misc/polar_stereographic/bathy_meter_giops_ps5km.nc",
         "url": "/data/db/riops-fc3dps.sqlite3",
         "grid_angle_file_url": "/data/grids/ecc/riops/grid_angle_riops_ps5km60n.nc",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
@@ -184,7 +185,8 @@
 	    "oxygensaturation": { "hide": "true", "name": "Oxygen Saturation", "scale": [4, 11], "unit": "ml/l", "equation": "oxygensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
 	    "nitrogensaturation": { "hide": "true", "name": "Nitrogen Saturation", "scale": [8, 20], "unit": "ml/l", "equation": "nitrogensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "unit": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "unit": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] }
+            "deepsoundchannelbottom": { "name": "Critical Depth", "unit": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
+	    "depthexcess": { "name": "Depth Excess", "unit": "m", "scale": [0, 1000], "equation": "depthexcess([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] }
         }
     },
     "riops_fc_2dps": {
