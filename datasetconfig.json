@@ -141,7 +141,7 @@
         "type": "forecast",
         "cache": 6,
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "model_class": "Nemo",
+        "model_class": "Mercator",
         "url": "/data/db/riops-fc2dll.sqlite3",
         "grid_angle_file_url": "/data/grids/riops/grid_angle.nc",
         "attribution": "Environment and Climate Change Canada",
