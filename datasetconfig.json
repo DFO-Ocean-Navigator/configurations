@@ -105,7 +105,7 @@
     },
     "giops_fc_3dll": {
         "envtype": ["ocean", "ice"],
-        "url": "/data/db/model_giops-2d-ll.sqlite3",
+        "url": "/data/db/model_giops-3d-ll.sqlite3",
 	"bathymetry_file_url": "/data/grids/ecc/giops/bathy_meter_giops_latlon_reformatted-ONav.nc",
         "name": "04. GIOPS Daily Forecast 3D - LatLon",
         "quantum": "day",
