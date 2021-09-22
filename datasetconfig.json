@@ -762,8 +762,8 @@
         "variables": {
             "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
             "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
-            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "unit": "degrees", "scale": [0, 360], "equation": "unstaggered_bearing(uo, vo)" ,"dims": ["time_counter", "depth", "y", "x"] },                
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "unstaggered_speed(vo, uo)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "unit": "degrees", "scale": [0, 360], "equation": "unstaggered_bearing(uo, vo, sin_alpha, cos_alpha)" ,"dims": ["time_counter", "depth", "y", "x"] },                
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "unstaggered_speed(uo, vo)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo" },
             "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
             "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 27], "dims": ["time_counter", "depth", "y", "x"] }
         }
