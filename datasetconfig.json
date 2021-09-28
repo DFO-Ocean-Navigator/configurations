@@ -743,9 +743,9 @@
     },
     "sjp3d": {
         "envtype": ["ocean", "ice"],
-        "bathymetry_file_url": "/home/on/gpsc/CONSTANTS/SJ100/Bathymetry_SJ100_adjusted.nc",
-        "url": "/home/on/db/sj100_pa.sqlite3",
-        "grid_angle_file_url": "/home/on/gpsc/CONSTANTS/SJ100/Rotation_SJ100.nc",
+        "bathymetry_file_url": "/home/ubuntu/gpsc/CONSTANTS/SJ100/Bathymetry_SJ100_adjusted.nc",
+        "url": "/home/ubuntu/db/sj100_pa.sqlite3",
+        "grid_angle_file_url": "/home/ubuntu/gpsc/CONSTANTS/SJ100/Rotation_SJ100.nc",
         "name": "Port of Saint John 3D",
         "quantum": "day",
         "type": "forecast",
@@ -767,5 +767,33 @@
             "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
             "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 27], "dims": ["time_counter", "depth", "y", "x"] }
         }
-    }    
+    },
+    "sjf3d": {
+        "envtype": ["ocean", "ice"],
+        "url": "/home/ubuntu/db/sj100_f.sqlite3",
+        "grid_angle_file_url": "/home/ubuntu/gpsc/CONSTANTS/SJ100/Rotation_SJ100.nc",
+        "bathymetry_file_url": "/home/ubuntu/gpsc/CONSTANTS/SJ100/Bathymetry_SJ100_adjusted.nc",
+        "name": "Port of Saint John 3D Forecast",
+        "quantum": "day",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "model_class": "Nemo",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
+        "help": " ",
+
+        "variables": {
+            "uo": { "name": "Water X Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "vo": { "name": "Water Y Velocity", "envtype": "ocean", "unit": "m/s", "scale": [-1.5, 1.5], "zero_centered": "true" },
+            "so": { "name": "Salinity", "envtype": "ocean", "unit": "PSU", "scale": [0, 37] },
+            "thetao": { "name": "Sea Temperature", "envtype": "ocean", "unit": "Celsius", "scale": [-1, 27], "dims": ["time_counter", "depth", "y", "x"] },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "unit": "degrees", "scale": [0, 360], "equation": "unstaggered_bearing(uo, vo, sin_alpha, cos_alpha)" ,"dims": ["time_counter", "depth", "y", "x"] },                
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 3], "equation": "unstaggered_speed(uo, vo)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo" }
+            
+        }
+    }
 }
