@@ -642,7 +642,7 @@
         }
     },
     "salishseacast_3d_biology": {
-        "enabled": false,
+        "enabled": true,
         "name": "23. SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
@@ -673,7 +673,7 @@
         }
     },
     "salishseacast_3d_currents": {
-        "enabled": false,
+        "enabled": true,
         "name": "24. SalishSeaCast 3D Currents",
         "envtype": ["ocean"],
         "type": "historical",
@@ -700,7 +700,7 @@
         }
     },
     "salishseacast_3d_tracers": {
-        "enabled": false,
+        "enabled": true,
         "name": "25. SalishSeaCast 3D Salinity & Temperature",
         "envtype": ["ocean"],
         "type": "historical",
@@ -722,7 +722,7 @@
         }
     },
     "salishseacast_2d_ssh": {
-        "enabled": false,
+        "enabled": true,
         "name": "26. SalishSeaCast Sea Surface Height",
         "envtype": ["ocean"],
         "type": "historical",
