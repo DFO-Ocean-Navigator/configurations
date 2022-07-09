@@ -767,5 +767,33 @@
         "variables": {
             "ssh": { "name":  "Sea Surface Height", "unit":  "m", "scale":  [-4, 4], "zero_centered": "true" }
         }
-    }
+    },
+    "gdwps_fc_2d_wave": {
+        "envtype": ["ocean", "ice"],
+        "url": "/home/prodyut.roy/GDWPS_db/GDWPS.sqlite3",
+        "name": "27. Global Deterministic Wave Prediction System (GDWPS) - LatLon",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1970-01-01 00:00:00",
+        "model_class": "Mercator",
+        "enabled": true,
+        "cache": 6,
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": " Document <a href=\"../data-help/gdwps-10day.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "shww": { "name": "Significant height of wind waves", "envtype": "ocean", "unit": "m", "scale": [0, 25], "zero_centered": "false" },
+            "u10": { "name": "10 metre U wind component", "envtype": "ocean", "unit": "m/s", "scale": [-50, 50], "zero_centered": "true" },
+            "v10": { "name": "10 metre V wind component", "envtype": "ocean", "unit": "m/s", "scale": [-50, 50], "zero_centered": "true" },  
+            "wvdir": { "name": "Direction of wind waves", "envtype": "ocean", "unit": "degrees", "scale": [0, 360], "zero_centered": "false" },
+            "mp2": { "name": "Mean zero-crossing wave period", "envtype": "ocean", "unit": "s", "scale": [0, 60], "zero_centered": "false" },
+            "pp1d": { "name": "Peak wave period", "envtype": "ocean", "unit": "s", "scale": [0, 60], "zero_centered": "false" },
+            "siconc": { "name": "Sea ice area fraction", "envtype": "ocean", "unit": "%", "scale": [0, 1], "zero_centered": "false" },
+            "swh": { "name": "Significant height of combined wind waves and swell", "envtype": "ocean", "unit": "m", "scale": [0, 25], "zero_centered": "false" },
+            "magwindvel": { "name": "Wind Velocity", "envtype": "ocean", "unit": "m/s", "scale": [0, 50], "equation": "magnitude(u10, v10)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "u10", "north_vector_component": "v10", "bearing_component":"bearing" },
+            "bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "unit": "degrees", "scale": [0, 360], "equation": "bearing(v10, u10)" ,"dims": ["time", "latitude", "longitude"] }
+        }
+    }  
 }
