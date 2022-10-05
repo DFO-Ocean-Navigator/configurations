@@ -1,0 +1,29 @@
+    "salishseacast_3d_currents": {
+        "group": "SalishSeaCast",
+        "subgroup": "3D",
+        "enabled": true,
+        "name": "SalishSeaCast 3D Currents",
+        "envtype": ["ocean"],
+        "type": "historical",
+        "url": [
+            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DuGridFields1hV19-05",
+            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DvGridFields1hV19-05"
+        ],
+        "geo_ref": {
+            "url": "/data/grids/salishsea/geo_reference_201702.nc",
+            "drop_variables": ["bathymetry"]
+        },
+        "grid_angle_file_url": "/data/grids/salishsea/grid_angle_salishsea_201702.nc",
+        "model_class": "Nemo",
+        "quantum": "hour",
+        "time_dim_units": "seconds since 1970-01-01 00:00:00",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
+        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
+        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_currents.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "uVelocity": { "name":  "Eastward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
+            "vVelocity": { "name":  "Northward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
+            "current_speed": { "name":  "Speed of Current", "unit": "m/s", "scale":  [0, 8], "equation": "unstaggered_speed(uVelocity, vVelocity)", "dims": ["time", "depth", "gridY", "gridX"] }
+        }
+    }
