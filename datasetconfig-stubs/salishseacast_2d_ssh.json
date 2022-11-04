@@ -1,0 +1,23 @@
+    "salishseacast_2d_ssh": {
+        "group": "SalishSeaCast",
+        "subgroup": "2D",
+        "enabled": true,
+        "name": "SalishSeaCast Sea Surface Height",
+        "envtype": ["ocean"],
+        "type": "historical",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
+        "geo_ref": {
+            "url": "/data/grids/salishsea/geo_reference_201702.nc",
+            "drop_variables": ["bathymetry"]
+        },
+        "quantum": "hour",
+        "time_dim_units": "seconds since 1970-01-01 00:00:00",
+        "model_class": "Nemo",
+        "lat_var_key": "nav_lat",
+        "lon_var_key": "nav_lon",
+        "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
+        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_2d_ssh.html\" target=\"_new\">link</a>.",
+        "variables": {
+            "ssh": { "name":  "Sea Surface Height", "unit":  "m", "scale":  [-4, 4], "zero_centered": "true" }
+        }
+    }
