@@ -18,16 +18,16 @@
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_biology.html\" target=\"_new\">link</a>.",
         "variables": {
-            "ammonium": { "name":  "Ammonium Concentration", "unit":  "mmol m-3", "scale":  [0, 5] },
-            "biogenic_silicon": { "name":  "Biogenic Silicon Concentration", "unit":  "mmol m-3", "scale":  [0, 70] },
-            "ciliates": { "name":  "Mesodinium rubrum Concentration as Nitrogen", "unit":  "mmol m-3", "scale":  [0, 10] },
-            "diatoms": { "name":  "Diatoms Concentration as Nitrogen", "unit":  "mmol m-3", "scale":  [0, 20] },
-            "dissolved_organic_nitrogen": { "name":  "Dissolved Organic Nitrogen Concentration", "unit":  "mmol m-3", "scale":  [0, 10] },
-            "flagellates": { "name":  "Flagellates Concentration as Nitrogen", "unit":  "mmol m-3", "scale":  [0, 128] },
-            "mesozooplankton": { "name":  "Mesozooplankton Concentration as Nitrogen", "unit":  "mmol m-3", "scale":  [0, 128] },
-            "microzooplankton": { "name":  "Microzooplankton Concentration as Nitrogen", "unit":  "mmol m-3", "scale":  [0, 100] },
-            "nitrate": { "name":  "Nitrate Concentration", "unit":  "mmol m-3", "scale":  [0, 40] },
-            "particulate_organic_nitrogen": { "name":  "Particulate Organic Nitrogen Concentration", "unit":  "mmol m-3", "scale":  [0, 10] },
-            "silicon": { "name":  "Silicon Concentration", "unit":  "mmol m-3", "scale":  [0, 70] }
+            "ammonium": { "name":  "Ammonium Concentration", "units":  "mmol m-3", "scale":  [0, 5] },
+            "biogenic_silicon": { "name":  "Biogenic Silicon Concentration", "units":  "mmol m-3", "scale":  [0, 70] },
+            "ciliates": { "name":  "Mesodinium rubrum Concentration as Nitrogen", "units":  "mmol m-3", "scale":  [0, 10] },
+            "diatoms": { "name":  "Diatoms Concentration as Nitrogen", "units":  "mmol m-3", "scale":  [0, 20] },
+            "dissolved_organic_nitrogen": { "name":  "Dissolved Organic Nitrogen Concentration", "units":  "mmol m-3", "scale":  [0, 10] },
+            "flagellates": { "name":  "Flagellates Concentration as Nitrogen", "units":  "mmol m-3", "scale":  [0, 128] },
+            "mesozooplankton": { "name":  "Mesozooplankton Concentration as Nitrogen", "units":  "mmol m-3", "scale":  [0, 128] },
+            "microzooplankton": { "name":  "Microzooplankton Concentration as Nitrogen", "units":  "mmol m-3", "scale":  [0, 100] },
+            "nitrate": { "name":  "Nitrate Concentration", "units":  "mmol m-3", "scale":  [0, 40] },
+            "particulate_organic_nitrogen": { "name":  "Particulate Organic Nitrogen Concentration", "units":  "mmol m-3", "scale":  [0, 10] },
+            "silicon": { "name":  "Silicon Concentration", "units":  "mmol m-3", "scale":  [0, 70] }
         }
     }
