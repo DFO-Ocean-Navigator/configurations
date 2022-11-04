@@ -18,7 +18,7 @@
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_tracers.html\" target=\"_new\">link</a>.",
         "variables": {
-            "salinity": { "name":  "Salinity", "unit":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
-            "temperature": { "name":  "Conservative Temperature", "unit":  "Celcius", "scale":  [4, 20] }
+            "salinity": { "name":  "Salinity", "units":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
+            "temperature": { "name":  "Conservative Temperature", "units":  "Celcius", "scale":  [4, 20] }
         }
     }

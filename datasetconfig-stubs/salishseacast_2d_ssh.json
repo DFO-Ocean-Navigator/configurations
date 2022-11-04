@@ -18,6 +18,6 @@
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_2d_ssh.html\" target=\"_new\">link</a>.",
         "variables": {
-            "ssh": { "name":  "Sea Surface Height", "unit":  "m", "scale":  [-4, 4], "zero_centered": "true" }
+            "ssh": { "name":  "Sea Surface Height", "units":  "m", "scale":  [-4, 4], "zero_centered": "true" }
         }
     }

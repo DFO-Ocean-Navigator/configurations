@@ -22,8 +22,8 @@
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_currents.html\" target=\"_new\">link</a>.",
         "variables": {
-            "uVelocity": { "name":  "Eastward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
-            "vVelocity": { "name":  "Northward Current", "unit":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
-            "current_speed": { "name":  "Speed of Current", "unit": "m/s", "scale":  [0, 8], "equation": "unstaggered_speed(uVelocity, vVelocity)", "dims": ["time", "depth", "gridY", "gridX"] }
+            "uVelocity": { "name":  "Eastward Current", "units":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
+            "vVelocity": { "name":  "Northward Current", "units":  "m/s", "scale":  [-8, 8], "zero_centered": "true" },
+            "current_speed": { "name":  "Speed of Current", "units": "m/s", "scale":  [0, 8], "equation": "unstaggered_speed(uVelocity, vVelocity)", "dims": ["time", "depth", "gridY", "gridX"] }
         }
     }
