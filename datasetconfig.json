@@ -704,6 +704,36 @@
             "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "units": "Nm-1", "scale": [-1, 1] }
          }
     },    
+    "gdwps": {
+        "group": "GDWPS Forecast", 
+        "envtype": ["ocean", "ice"],
+        "url": "http://navigator.oceansdata.ca/thredds/dodsC/ECCC/model_gdwps",
+        "name": "GDWPS",
+        "quantum": "day",
+        "type": "forecast",
+        "model_class": "Mercator",
+        "enabled": true,
+        "cache": 6,
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "lat",
+        "lon_var_key": "lon",
+        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "Mean_wave_direction_of_first_swell_partition_surface": { "name": "Mean wave direction of first swell partition", "units": "degrees", "scale": [0,359] },
+            "Mean_wave_direction_of_second_swell_partition_surface": { "name": "Mean wave direction of second swell partition", "units": "degrees", "scale": [0,359] },
+            "Mean_zero-crossing_wave_period_surface": { "name": "Mean zero-crossing wave period", "units": "s", "scale": [0,30] },
+            "Peak_period_of_wind_waves_surface": { "name": "Peak period of wind waves", "units": "s", "scale": [0,30] },
+            "Peak_wave_direction_surface": { "name": "Peak wave direction", "units": "degrees", "scale": [0,359] },
+            "Peak_wave_period_surface": { "name": "Peak wave period", "units": "s", "scale": [0,30] },
+            "Significant_height_of_combined_wind_waves_and_swell_surface": { "name": "Significant height of combined wind waves and swell", "units": "m", "scale": [0,15] },
+            "Significant_height_of_wind_waves_surface": { "name": "Significant height of wind waves", "units": "m", "scale": [0,15] },
+            "Significant_wave_height_of_first_swell_partition_surface": { "name": "Significant wave height of first swell partition", "units": "m", "scale": [0,15] },
+            "Significant_wave_height_of_second_swell_partition_surface": { "name": "Significant wave height of second swell partition", "units": "m", "scale": [0,15] },
+            "u-component_of_wind_height_above_ground": { "name": "u-component of wind", "units": "m", "scale": [0,15] },
+            "v-component_of_wind_height_above_ground": { "name": "v-component of wind", "units": "m", "scale": [0,15] }
+        }
+    },    
     "gsl_3d": {
         "group": "GSL",
         "subgroup": "3D", 
