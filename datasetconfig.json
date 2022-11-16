@@ -708,8 +708,8 @@
         "group": "GDWPS Forecast", 
         "envtype": ["ocean", "ice"],
         "url": "http://navigator.oceansdata.ca/thredds/dodsC/ECCC/model_gdwps",
-        "name": "GDWPS",
-        "quantum": "day",
+        "name": "GDWPS 5 day Forecast 2D - LatLon",
+        "quantum": "hour",
         "type": "forecast",
         "model_class": "Mercator",
         "enabled": true,
@@ -717,7 +717,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "lat",
         "lon_var_key": "lon",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_gdwps/readme_gdwps_en\" target=\"_new\">link</a>.",
 
         "variables": {
             "Mean_wave_direction_of_first_swell_partition_surface": { "name": "Mean wave direction of first swell partition", "units": "degrees", "scale": [0,359] },
