@@ -17,6 +17,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -50,6 +51,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -91,6 +93,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/\" target=\"_new\">link</a>.",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -125,6 +128,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/\" target=\"_new\">link</a>.",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -167,6 +171,8 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -198,6 +204,8 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "vozocrtx": { "hide": "true", "envtype": "ocean", "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "hide": "true", "envtype": "ocean", "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -236,6 +244,8 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "votemper": { "envtype": "ocean", "name": "Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "yc", "xc"], "valid_min": -100, "valid_max": 100 },
             "vosaline": { "envtype": "ocean", "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -278,6 +288,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -311,6 +322,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -352,6 +364,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -385,6 +398,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -426,6 +440,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -459,6 +474,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -500,6 +516,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -533,6 +550,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -574,6 +592,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -607,6 +626,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -648,6 +668,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -681,6 +702,7 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -719,23 +741,30 @@
         "lat_var_key": "lat",
         "lon_var_key": "lon",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_gdwps/readme_gdwps_en\" target=\"_new\">link</a>.",
+        "vector_variables": ["windwavemag", "windwavemag2", "Peak_wave_direction","Peak_wave_direction2", "magwindvel"],
 
         "variables": {
-            "Direction_of_wind_waves_surface": { "name": "Wind wave direction", "units": "m", "scale": [0, 360]  },
+            "windwavemag": { "name": "Wind wave field (uniform magnitude)", "units": "degrees", "scale": [0, 1], "equation": "Direction_of_wind_waves_surface^0",  "dims": ["time", "lat", "lon"], "bearing_component": "Direction_of_wind_waves_surface"},
+            "windwavemag2": { "name": "Wind wave field (period magnitude)", "units": "degrees", "scale": [0, 1], "equation": "Peak_period_of_wind_waves_surface",  "dims": ["time", "lat", "lon"], "bearing_component": "Direction_of_wind_waves_surface"},
+            "Direction_of_wind_waves_surface": { "hide": "true", "name": "Wind wave direction", "units": "degrees", "scale": [0, 360]  },
             "Mean_wave_direction_of_first_swell_partition_surface": { "name": "Mean wave direction of first swell partition", "units": "degrees", "scale": [0, 360] },
             "Mean_wave_direction_of_second_swell_partition_surface": { "name": "Mean wave direction of second swell partition", "units": "degrees", "scale": [0, 360] },
             "Mean_zero-crossing_wave_period_surface": { "name": "Mean zero-crossing wave period", "units": "s", "scale": [0, 24] },
             "Peak_period_of_wind_waves_surface": { "name": "Peak wave period of wind waves", "units": "s", "scale": [0, 24] },
+            "Peak_wave_direction": { "name": "Peak wave direction (uniform magnitude)", "units": "degrees", "scale": [0, 360], "equation": "Peak_wave_direction_surface^0",  "dims": ["time", "lat", "lon"], "bearing_component": "Peak_wave_direction_surface"},
+            "Peak_wave_direction2": { "name": "Peak wave direction (period magnitude)", "units": "degrees", "scale": [0, 360], "equation": "Peak_wave_period_surface",  "dims": ["time", "lat", "lon"], "bearing_component": "Peak_wave_direction_surface"},
             "Peak_wave_direction_surface": { "name": "Peak wave direction", "units": "degrees", "scale": [0, 360] },
             "Peak_wave_period_surface": { "name": "Peak wave period", "units": "s", "scale": [0, 24] },
             "Significant_height_of_combined_wind_waves_and_swell_surface": { "name": "Significant wave height of combined wind waves and swell", "units": "m", "scale": [0, 10] },
             "Significant_height_of_wind_waves_surface": { "name": "Significant wave height of wind waves", "units": "m", "scale": [0, 10] },
             "Significant_wave_height_of_first_swell_partition_surface": { "name": "Significant wave height of first swell partition", "units": "m", "scale": [0, 10] },
             "Significant_wave_height_of_second_swell_partition_surface": { "name": "Significant wave height of second swell partition", "units": "m", "scale": [0, 10] },
-            "u-component_of_wind_height_above_ground": { "name": "u-component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
-            "v-component_of_wind_height_above_ground": { "name": "v-component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
+            "u-component_of_wind_height_above_ground": { "name": "u component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
+            "v-component_of_wind_height_above_ground": { "name": "v component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
             "VAR10-0-65_FROM_54-0--1_surface":{ "name": "Peak wave period of first swell partition", "units": "s", "scale": [0, 24] },
-            "VAR10-0-66_FROM_54-0--1_surface":{ "name": "Peak wave period of second swell partition", "units": "s", "scale": [0, 24] }
+            "VAR10-0-66_FROM_54-0--1_surface":{ "name": "Peak wave period of second swell partition", "units": "s", "scale": [0, 24] },
+            "magwindvel": { "name": "Wind Velocity", "units": "m/s", "scale": [0, 25], "equation": "magnitude(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)",  "dims": ["time", "lat", "lon"], "east_vector_component": "u-component_of_wind_height_above_ground", "north_vector_component": "v-component_of_wind_height_above_ground", "bearing_component":"wind_bearing" },
+            "wind_bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)", "dims": ["time", "lat", "lon"] }
         }
     },    
     "gsl_3d": {
@@ -756,6 +785,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "help": " ",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "vomecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
@@ -785,6 +815,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "help": " ",
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "somecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
@@ -814,6 +845,7 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
 
         "variables": {
             "uwindsurf": { "name": "Surface Wind East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
@@ -853,6 +885,8 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_PHY_001_024/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -879,6 +913,8 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_PHY_001_024/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -913,6 +949,8 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -947,6 +985,8 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -981,6 +1021,8 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
@@ -1015,6 +1057,8 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
+        
         "variables": {
             "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
