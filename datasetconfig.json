@@ -761,10 +761,10 @@
             "Significant_wave_height_of_second_swell_partition_surface": { "name": "Significant wave height of second swell partition", "units": "m", "scale": [0, 10] },
             "u-component_of_wind_height_above_ground": { "name": "u component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
             "v-component_of_wind_height_above_ground": { "name": "v component of wind", "units": "m", "scale": [-25, 25], "zero_centered": "true" },
-            "VAR10-0-65_FROM_54-0--1_surface":{ "name": "Peak wave period of first swell partition", "units": "s", "scale": [0, 24] },
-            "VAR10-0-66_FROM_54-0--1_surface":{ "name": "Peak wave period of second swell partition", "units": "s", "scale": [0, 24] },
-            "magwindvel": { "name": "Wind Velocity", "units": "m/s", "scale": [0, 25], "equation": "magnitude(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)",  "dims": ["time", "lat", "lon"], "east_vector_component": "u-component_of_wind_height_above_ground", "north_vector_component": "v-component_of_wind_height_above_ground", "bearing_component":"wind_bearing" },
-            "wind_bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)", "dims": ["time", "lat", "lon"] }
+            "VAR10-0-65_FROM_54-0--1_surface": { "name": "Peak wave period of first swell partition", "units": "s", "scale": [0, 24] },
+            "VAR10-0-66_FROM_54-0--1_surface": { "name": "Peak wave period of second swell partition", "units": "s", "scale": [0, 24] },
+            "magwindvel": { "name": "Wind Velocity", "units": "m/s", "scale": [0, 25], "equation": "magnitude(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)",  "dims": ["time", "height_above_ground", "lat", "lon"], "east_vector_component": "u-component_of_wind_height_above_ground", "north_vector_component": "v-component_of_wind_height_above_ground", "bearing_component":"wind_bearing" },
+            "wind_bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)", "dims": ["time", "height_above_ground", "lat", "lon"] }
         }
     },    
     "gsl_3d": {
