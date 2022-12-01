@@ -28,7 +28,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "depthexcess": { "name": "Depth Excess", "units": "m", "scale": [0, 1000], "equation": "depthexcess([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
@@ -51,7 +51,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
-        "vector_variables": ["magwatervel"],
+        "vector_variables": ["magwatervel", "icevelocity"],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -104,7 +104,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
 	        "depthexcess": { "name": "Depth Excess", "units": "m", "scale": [0, 1000], "equation": "depthexcess([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"]},
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
@@ -222,7 +222,7 @@
 	        "oxygensaturation": { "hide": "true", "name": "Oxygen Saturation", "scale": [4, 11], "units": "ml/l", "equation": "oxygensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
 	        "nitrogensaturation": { "hide": "true", "name": "Nitrogen Saturation", "scale": [8, 20], "units": "ml/l", "equation": "nitrogensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },     
+            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "yc", "xc"] },     
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","yc","xc"]}
         }
     },
@@ -299,7 +299,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
@@ -375,7 +375,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "hide": "true", "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
@@ -451,7 +451,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "hide": "true", "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
@@ -527,7 +527,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "hide": "true", "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
@@ -603,7 +603,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "hide": "true", "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
@@ -679,7 +679,7 @@
             "sspeed": { "name": "Speed of Sound", "envtype": "ocean", "scale": [1400, 1600], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "latitude", "longitude"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
-            "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "latitude", "longitude"] },
+            "deepsoundchannelbottom": { "hide": "true", "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "latitude", "longitude"] },
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","latitude","longitude"], "interpolation":{"interpType": "nearest","interpRadius": 25, "interpNeighbours": 10}},
 	        "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "depth", "latitude", "longitude"] }
         }
