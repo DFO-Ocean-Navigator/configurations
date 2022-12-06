@@ -763,66 +763,6 @@
             "wind_bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)", "dims": ["time", "height_above_ground", "lat", "lon"] }
         }
     },    
-    "gsl_3d": {
-        "group": "GSL",
-        "subgroup": "3D", 
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/gsl-3d.sqlite3",
-        "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "13. Gulf of St. Lawrence 3D",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "model_class": "Nemo",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help": " ",
-        "vector_variables": ["magwatervel"],
-
-        "variables": {
-            "vomecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "depth", "y", "x"] },
-            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "depth", "y", "x"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [2, 35] }
-        }
-    },
-    "gsl_surface": {
-        "group": "GSL",
-        "subgroup": "2D",         
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/gsl-surface-combined.sqlite3",
-        "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "14. Gulf of St. Lawrence Surface",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "model_class": "Nemo",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help": " ",
-        "vector_variables": ["magwatervel"],
-
-        "variables": {
-            "somecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "sozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "somecrtn": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "somecrtx * sin_alpha + somecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "y", "x"] },
-            "somecrte": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "somecrtx * cos_alpha - somecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "y", "x"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"], "east_vector_component": "somecrte", "north_vector_component": "somecrtn" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [2, 35] }
-        }
-    },
     "wcps_2dll": {
         "group": "WCPS Forecast",
         "subgroup": "2D",                
