@@ -763,66 +763,6 @@
             "wind_bearing": { "hide": "true", "name": "Wind Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(u-component_of_wind_height_above_ground, v-component_of_wind_height_above_ground)", "dims": ["time", "height_above_ground", "lat", "lon"] }
         }
     },    
-    "gsl_3d": {
-        "group": "GSL",
-        "subgroup": "3D", 
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/gsl-3d.sqlite3",
-        "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "13. Gulf of St. Lawrence 3D",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "model_class": "Nemo",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help": " ",
-        "vector_variables": ["magwatervel"],
-
-        "variables": {
-            "vomecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "depth", "y", "x"] },
-            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "depth", "y", "x"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time_counter", "depth", "y", "x"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "depth", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [2, 35] }
-        }
-    },
-    "gsl_surface": {
-        "group": "GSL",
-        "subgroup": "2D",         
-        "envtype": ["ocean", "ice"],
-        "url": "/data/db/gsl-surface-combined.sqlite3",
-        "grid_angle_file_url": "/data/grids/gulf/grid_angle.nc",
-        "name": "14. Gulf of St. Lawrence Surface",
-        "quantum": "hour",
-        "type": "forecast",
-        "time_dim_units": "seconds since 1950-01-01 00:00:00",
-        "model_class": "Nemo",
-        "enabled": false,
-        "cache": 6,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
-        "lat_var_key": "nav_lat",
-        "lon_var_key": "nav_lon",
-        "help": " ",
-        "vector_variables": ["magwatervel"],
-
-        "variables": {
-            "somecrty": { "hide": "true", "name": "Water Y Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "sozocrtx": { "hide": "true", "name": "Water X Velocity", "envtype": "ocean", "units": "m/s", "scale": [-1, 1], "zero_centered": "true" },
-            "somecrtn": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "somecrtx * sin_alpha + somecrty * cos_alpha", "zero_centered": "true" , "dims": ["time_counter", "y", "x"] },
-            "somecrte": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "somecrtx * cos_alpha - somecrty * sin_alpha", "zero_centered": "true", "dims": ["time_counter", "y", "x"] },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(sozocrtx, somecrty)",  "dims": ["time_counter", "y", "x"], "east_vector_component": "somecrte", "north_vector_component": "somecrtn" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-2, 5], "equation": "votemper - 273.15", "dims": ["time_counter", "y", "x"] },
-            "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [2, 35] }
-        }
-    },
     "wcps_2dll": {
         "group": "WCPS Forecast",
         "subgroup": "2D",                
@@ -1073,66 +1013,10 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vsi, usi)" ,"dims": ["time", "latitude", "longitude"] }
         }
     },
-    "freebiorys2v4_daily": {
-        "group": "CMEMS",
-        "subgroup": "Forecast",        
-        "name": "Copernicus Marine Service Global Ocean Biogeochemistry Analysis and Forecast (Daily)",
-        "quantum": "day",
-        "type": "historical",
-        "time_dim_units": "hours since 1950-01-01",
-        "model_class": "Mercator",
-        "url": "/data/db/cmems-global-reanalysis-bio-001-029-daily.sqlite3",
-        "enabled": true,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST BIO 001 028 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_BIO_001_028/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST BIO 001 028 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-028.pdf\" target=\"_new\">link</a>.",
-        "variables": {
-            "phyc": { "name": "Total Phytoplankton", "units": "mmol/m^3", "scale": [0, 13] },
-            "ph": { "name": "PH", "units": "1", "scale": [7, 8.3] },
-            "spco2": { "name": "Surface Partial Pressure of CO2", "units": "Pa", "scale": [25, 78] },
-            "fe": { "name": "Dissolved Iron", "units": "mmol/m^3", "scale": [4.9e-6, 0.02] },
-            "nppv": { "name": "Total Primary Production of Phyto", "units": "mmol/m^3/day", "scale": [0, 100] },
-            "o2": { "name": "Dissolved Oxygen", "units": "mmol/m^3", "scale": [0, 410] },
-            "si": { "name": "Dissolved Silicate", "units": "mmol/m^3", "scale": [0, 77] },
-            "po4": { "name": "Phosphate Concentration", "units": "mmol/m^3", "scale": [0, 3] },
-            "no3": { "name": "Nitrate Concentration", "units": "mmol/m^3", "scale": [0, 13.5] },
-            "chl": { "name": "Total Chlorophyll", "units": "mg/m^3", "scale": [0.03, 4.7] }
-        }
-     },
-    "freebiorys2v4_monthly": {
-        "group": "CMEMS",
-        "subgroup": "Forecast",        
-        "name": "Copernicus Marine Service Global Ocean Biogeochemistry Analysis and Forecast (Monthly)",
-        "quantum": "month",
-        "type": "historical",
-        "time_dim_units": "hours since 1950-01-01",
-        "model_class": "Mercator",
-        "url": "/data/db/cmems-global-reanalysis-bio-001-029-monthly.sqlite3",
-        "enabled": true,
-        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
-        "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
-        "lat_var_key": "latitude",
-        "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST BIO 001 028 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_BIO_001_028/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST BIO 001 028 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-028.pdf\" target=\"_new\">link</a>.",
-        "variables": {
-            "phyc": { "name": "Total Phytoplankton", "units": "mmol/m^3", "scale": [0, 13] },
-            "ph": { "name": "PH", "units": "1", "scale": [7, 8.3] },
-            "spco2": { "name": "Surface Partial Pressure of CO2", "units": "Pa", "scale": [25, 78] },
-            "fe": { "name": "Dissolved Iron", "units": "mmol/m^3", "scale": [4.9e-6, 0.02] },
-            "nppv": { "name": "Total Primary Production of Phyto", "units": "mmol/m^3/day", "scale": [0, 100] },
-            "o2": { "name": "Dissolved Oxygen", "units": "mmol/m^3", "scale": [0, 410] },
-            "si": { "name": "Dissolved Silicate", "units": "mmol/m^3", "scale": [0, 77] },
-            "po4": { "name": "Phosphate Concentration", "units": "mmol/m^3", "scale": [0, 3] },
-            "no3": { "name": "Nitrate Concentration", "units": "mmol/m^3", "scale": [0, 13.5] },
-            "chl": { "name": "Total Chlorophyll", "units": "mg/m^3", "scale": [0.03, 4.7] }
-        }
-    },
     "salishseacast_3d_biology": {
         "group": "SalishSeaCast", 
         "subgroup": "3D",  
-        "enabled": true,
+        "enabled": false,
         "name": "SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
@@ -1165,7 +1049,7 @@
     "salishseacast_3d_currents": {
         "group": "SalishSeaCast",
         "subgroup": "3D",
-        "enabled": true,
+        "enabled": false,
         "name": "SalishSeaCast 3D Currents",
         "envtype": ["ocean"],
         "type": "historical",
@@ -1194,7 +1078,7 @@
     "salishseacast_3d_tracers": {
         "group": "SalishSeaCast",
         "subgroup": "3D",
-        "enabled": true,
+        "enabled": false,
         "name": "SalishSeaCast 3D Salinity & Temperature",
         "envtype": ["ocean"],
         "type": "historical",
@@ -1218,7 +1102,7 @@
     "salishseacast_2d_ssh": {
         "group": "SalishSeaCast",
         "subgroup": "2D",
-        "enabled": true,
+        "enabled": false,
         "name": "SalishSeaCast Sea Surface Height",
         "envtype": ["ocean"],
         "type": "historical",
