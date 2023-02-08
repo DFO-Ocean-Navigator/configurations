@@ -16,7 +16,7 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
-
+        "vector_variables": ["magwatervel"],
         "variables": {
             "uwindsurf": { "name": "Surface Wind East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
             "vwindsurf": { "name": "Surface Wind North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
@@ -24,7 +24,7 @@
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector_component": "vomecrty", "bearing_component":"bearing_water" },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-0.07, 5], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 },
+            "votemper": { "name": "Potential Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-0.07, 5], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 },
             "tairsurf": { "name": "Surface Air Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-20, 20], "equation": "tairsurf - 273.15", "dims": ["time", "latitude", "longitude"] },
             "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "units": "m", "scale": [-2, 2], "zero_centered": "true" },
             "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "units": "fraction", "scale": [0, 1] },

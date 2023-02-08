@@ -16,8 +16,9 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
+        "vector_variables": ["magwatervel"],
         "variables": {
-            "votemper": { "envtype": "ocean", "name": "Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "yc", "xc"], "valid_min": -100, "valid_max": 100 },
+            "votemper": { "envtype": "ocean", "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "yc", "xc"], "valid_min": -100, "valid_max": 100 },
             "vosaline": { "envtype": "ocean", "name": "Salinity", "units": "PSU", "scale": [30, 40] },
             "vozocrtx": { "hide": "true", "envtype": "ocean", "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "hide": "true", "envtype": "ocean", "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },

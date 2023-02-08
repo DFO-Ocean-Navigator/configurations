@@ -14,8 +14,9 @@
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
         "variables": {
-            "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-5, 30] },
+            "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
             "vo": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3] },
             "uo": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3] },
