@@ -16,13 +16,13 @@
         "lon_var_key": "longitude",
         "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
         "vector_arrow_stride": 15,
-
+        "vector_variables": ["magwatervel"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector_component": "vomecrty", "bearing_component": "bearing" },
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "latitude", "longitude"] },
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5,30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
+            "votemper": { "name": "Potential Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5,30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"] },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [30, 40] },
             "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "units": "m", "scale": [-3, 3], "zero_centered": "true" },
             "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "units": "fraction", "scale": [0, 1] },
@@ -37,5 +37,5 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(itzocrtx, itmecrty)" ,"dims": ["time", "latitude", "longitude"] },
             "iicestrength": { "name": "Compressive Ice Strength", "envtype": "ice", "units": "Nm-1", "scale": [-1, 1] },
             "iicepressure": { "name": "Internal Ice Pressure", "envtype": "ice", "units": "Nm-1", "scale": [-1, 1] }
-         }
-    }    
+        }
+    }

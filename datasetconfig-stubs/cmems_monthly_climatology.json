@@ -14,8 +14,9 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "vector_arrow_stride": 10,
+        "vector_variables": ["magwatervel"],
         "variables": {
-            "thetao": { "name": "Temperature", "units": "Celsius", "scale": [-2, 26] },
+            "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
             "vo": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3] },
             "uo": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3] },

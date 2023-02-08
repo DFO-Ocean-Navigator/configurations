@@ -15,12 +15,12 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
-
+        "vector_variables": ["magwatervel", "icevelocity"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vozocrtx", "north_vector_component": "vomecrty" , "bearing_component":"bearing_water"},
-            "votemper": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 },
+            "votemper": { "name": "Potential Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 },
             "vosaline": { "name": "Salinity", "envtype": "ocean", "units": "PSU", "scale": [30, 40] },
             "sossheig": { "name": "Sea Surface Height", "envtype": "ocean", "units": "m", "scale": [-3, 3], "zero_centered": "true" },
             "iiceconc": { "name": "Ice Concentration", "envtype": "ice", "units": "fraction", "scale": [0, 1] },
