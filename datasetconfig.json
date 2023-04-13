@@ -16,7 +16,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/giops-10day.html",
         "vector_variables": ["magwatervel"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -49,7 +49,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/giops-10day.html",
         "vector_variables": ["magwatervel", "icevelocity"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -90,7 +90,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/",
         "vector_variables": ["magwatervel"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -124,7 +124,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_giops/readme_giops-datamart_en/",
         "vector_variables": ["magwatervel"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -154,7 +154,7 @@
         "climatology": "",
         "envtype": ["ocean", "ice"],
         "enabled": true,
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
 	    "name": "CCG RIOPS Forecast Surface - LatLon",
         "quantum": "hour",
         "type": "forecast",
@@ -186,7 +186,7 @@
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
         "enabled": true,
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
         "name": "RIOPS Forecast 3D - Polar Stereographic",
         "quantum": "hour",
         "type": "forecast",
@@ -226,7 +226,7 @@
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
         "enabled": true,
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
         "name": "RIOPS Forecast Surface - Polar Stereographic",
         "quantum": "hour",
         "type": "forecast",
@@ -279,7 +279,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -312,7 +312,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -353,7 +353,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -386,7 +386,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -427,7 +427,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -460,7 +460,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -501,7 +501,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/giops-10day.html",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -534,7 +534,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -575,7 +575,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -608,7 +608,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -649,7 +649,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -682,7 +682,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -721,7 +721,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "lat",
         "lon_var_key": "lon",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_gdwps/readme_gdwps_en\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_gdwps/readme_gdwps_en",
         "vector_variables": ["Direction_of_wind_waves_surface", "Peak_wave_direction_surface", "magwindvel"],
         "variables": {
             "Direction_of_wind_waves_surface": { "name": "Wind wave direction", "units": "degrees", "scale": [0, 360] },
@@ -759,7 +759,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -798,7 +798,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_PHY_001_024/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
+        "help": "https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -825,7 +825,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_ANALYSIS_FORECAST_PHY_001_024/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL ANALYSIS FORECAST PHY 001 024 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
+        "help": "https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -860,7 +860,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
+        "help": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -895,7 +895,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
+        "help": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -921,7 +921,7 @@
         "subgroup": "Climatology",        
         "name": "CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12 deg",
 	    "url": "/data/db/mercatorglorys12v1_gl12_mean_monthly.sqlite3",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/glorys12_climatology_monthly.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/glorys12_climatology_monthly.html",
 	    "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
@@ -965,7 +965,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/glorys12_climatology_seasonal.html",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
@@ -1004,7 +1004,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_biology.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/salishseacast_3d_biology.html",
         "variables": {
             "ammonium": { "name":  "Ammonium Concentration", "units":  "mmol m-3", "scale":  [0, 5] },
             "biogenic_silicon": { "name":  "Biogenic Silicon Concentration", "units":  "mmol m-3", "scale":  [0, 70] },
@@ -1041,7 +1041,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_currents.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/salishseacast_3d_currents.html",
         "variables": {
             "uVelocity": { "name":  "Eastward Current", "units":  "m/s", "scale":  [-3, 3], "zero_centered": "true" },
             "vVelocity": { "name":  "Northward Current", "units":  "m/s", "scale":  [-3, 3], "zero_centered": "true" },
@@ -1066,7 +1066,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_3d_tracers.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/salishseacast_3d_tracers.html",
         "variables": {
             "salinity": { "name":  "Salinity", "units":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
             "temperature": { "name":  "Conservative Temperature", "units":  "Celcius", "scale":  [4, 20] }
@@ -1090,7 +1090,7 @@
         "lat_var_key": "nav_lat",
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/salishseacast_2d_ssh.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/salishseacast_2d_ssh.html",
         "variables": {
             "ssh": { "name":  "Sea Surface Height", "units":  "m", "scale":  [-4, 4], "zero_centered": "true" }
         }
