@@ -1,6 +1,6 @@
     "giops_fc_3dll": {
-        "group": "GIOPS Forecast",
-        "subgroup": "Historical 3D",        
+        "group": "GIOPS Historical",
+        "subgroup": "3D",        
         "envtype": ["ocean", "ice"],
         "url": "/data/db/model_giops-3d-ll.sqlite3",
         "bathymetry_file_url": "/data/grids/ecc/giops/bathy_meter_giops_latlon_reformatted-ONav.nc",
