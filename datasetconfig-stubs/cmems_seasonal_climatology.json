@@ -1,9 +1,9 @@
-    "cmems_seasonal_climatolog": {
+    "cmems_seasonal_climatology": {
         "group": "CMEMS",
-        "subgroup": "Climatology",        
+        "subgroup": "Climatology (1993-2019)",        
         "name": "CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12deg",
         "url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
-        "quantum": "month",
+        "quantum": "season",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
         "model_class": "Mercator",
@@ -12,7 +12,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/glorys12_climatology_seasonal.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/glorys12_climatology_seasonal.html",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
         "variables": {
