@@ -705,7 +705,7 @@
         "group": "GDWPS Forecast",
         "subgroup": "2D",
         "envtype": ["ocean", "ice"],
-        "url": "http://192.168.10.3:8080/thredds/dodsC/ECCC/model_gdwps",
+        "url": "http://192.168.10.3:8090/thredds/dodsC/ECCC/model_gdwps",
         "name": "GDWPS 5 day Forecast 2D - LatLon",
         "quantum": "hour",
         "type": "forecast",
