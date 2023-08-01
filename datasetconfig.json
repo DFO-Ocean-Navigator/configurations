@@ -1,11 +1,11 @@
 {    
     "grenville_test": {
         "group": "Grenville Test Data",
-        "url": "/data/db/grenville_test.sqlite3",
+        "url": "/data/db/relocatable_grenville.sqlite3",
         "name": "Grenville Test Data",
         "quantum": "hour",
         "type": "forecast",
-        "time_dim_units": "hours since 2023-06-27 11:00:00",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
         "enabled": true,
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",        
@@ -14,11 +14,11 @@
         "vector_variables": ["magwatervel"],
 
         "variables": {
-            "vel_u": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vel_v": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vel_u, vel_v)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "vel_u", "north_vector_component": "vel_v", "bearing_component":"bearing" },
+            "u": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "v": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vel_u, vel_v)",  "dims": ["time", "latitude", "longitude"], "east_vector_component": "u", "north_vector_component": "v", "bearing_component":"bearing" },
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vel_v, vel_u)" ,"dims": ["time", "latitude", "longitude"] },
-            "temperature": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5, 30], "equation": "temperature - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 }
+            "tm": { "name": "Temperature", "envtype": "ocean", "units": "Celsius", "scale": [-5, 30], "equation": "tm - 273.15", "dims": ["time", "latitude", "longitude"], "valid_min": -100, "valid_max": 100 }
         }
     },
     "giops_day": {
