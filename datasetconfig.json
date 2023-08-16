@@ -35,7 +35,7 @@
         "lat_var_key": "lat",
         "lon_var_key": "lon",
         "vector_variables": ["magwatervel"],
-	"default_location": [-129.5, 53.5, 8],
+	    "default_location": [-129.5, 53.5, 8],
 
         "variables": {
             "u": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -328,7 +328,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-57, 44.5, 4],
+	    "default_location": [-57, 44.5, 4],
 
 
         "variables": {
@@ -363,7 +363,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-57, 44.5, 4],
+	    "default_location": [-57, 44.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -406,7 +406,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-133, 50.5, 4],
+	    "default_location": [-133, 50.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -440,7 +440,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-133, 50.5, 4],
+	    "default_location": [-133, 50.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -560,7 +560,7 @@
         "help": "./data-help/giops-10day.html",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-57, 44.5, 4],
+	    "default_location": [-57, 44.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -594,7 +594,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-57, 44.5, 4],
+	    "default_location": [-57, 44.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -637,7 +637,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-133, 50.5, 4],
+	    "default_location": [-133, 50.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -671,7 +671,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
-	"default_location": [-133, 50.5, 4],
+	    "default_location": [-133, 50.5, 4],
 
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
