@@ -282,6 +282,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-57, 44.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -314,6 +315,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-57, 44.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -355,6 +357,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-133, 50.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -387,6 +390,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-133, 50.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -428,6 +432,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+        "default_location": [-124, 49, 7],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -460,6 +465,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+        "default_location": [-124, 49, 7],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -501,6 +507,7 @@
         "help": "./data-help/giops-10day.html",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-57, 44.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -533,6 +540,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-57, 44.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -574,6 +582,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-133, 50.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -606,6 +615,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+	    "default_location": [-133, 50.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -647,6 +657,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+        "default_location": [-124, 49, 7],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -679,6 +690,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_arrow_stride": 15,
         "vector_variables": ["magwatervel"],
+        "default_location": [-124, 49, 7],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -756,6 +768,7 @@
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/",
         "vector_arrow_stride": 10,
         "vector_variables": ["magwatervel"],
+        "default_location": [-72, 45, 4],
         "variables": {
             "uwindsurf": { "name": "Surface Wind East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
             "vwindsurf": { "name": "Surface Wind North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
@@ -972,6 +985,7 @@
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "./data-help/salishseacast_3d_biology.html",
+        "default_location": [-123.8, 48.8, 7],
         "variables": {
             "ammonium": { "name":  "Ammonium Concentration", "units":  "mmol m-3", "scale":  [0, 5] },
             "biogenic_silicon": { "name":  "Biogenic Silicon Concentration", "units":  "mmol m-3", "scale":  [0, 70] },
@@ -1009,6 +1023,7 @@
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "./data-help/salishseacast_3d_currents.html",
+        "default_location": [-123.8, 48.8, 7],
         "variables": {
             "uVelocity": { "name":  "Eastward Current", "units":  "m/s", "scale":  [-3, 3], "zero_centered": "true" },
             "vVelocity": { "name":  "Northward Current", "units":  "m/s", "scale":  [-3, 3], "zero_centered": "true" },
@@ -1034,6 +1049,7 @@
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "./data-help/salishseacast_3d_tracers.html",
+        "default_location": [-123.8, 48.8, 7],
         "variables": {
             "salinity": { "name":  "Salinity", "units":  "PSU", "scale":  [0, 34], "equation": "salinity * 35 / 35.16504", "dims": ["time", "depth", "gridY", "gridX"] },
             "temperature": { "name":  "Conservative Temperature", "units":  "Celcius", "scale":  [4, 20] }
@@ -1058,6 +1074,7 @@
         "lon_var_key": "nav_lon",
         "attribution": "Mesoscale Ocean & Atmosphere Dynamics Group (MOAD), Earth, Ocean & Atmopspheric Sciences (EOAS), University of British Columbia",
         "help": "./data-help/salishseacast_2d_ssh.html",
+        "default_location": [-123.8, 48.8, 7],
         "variables": {
             "ssh": { "name":  "Sea Surface Height", "units":  "m", "scale":  [-4, 4], "zero_centered": "true" }
         }
