@@ -18,15 +18,13 @@
         "lon_var_key": "lon_var",
         "vector_variables": ["magwatervel"],
         "variables": {
-            "vozocrtx": { "hide": "true", "envtype": "ocean", "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vomecrty": { "hide": "true", "envtype": "ocean", "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "vozocrte": { "name": "Water East Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "depth", "y", "x"] },
-            "vomecrtn": { "name": "Water North Velocity", "envtype": "ocean", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true", "dims": ["time", "depth", "y", "x"] },
+            "vozocrtx": { "envtype": "ocean", "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "envtype": "ocean", "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "envtype": "ocean", "units": "m/s", "scale": [0, 3], "equation": "magnitude(vozocrtx, vomecrty)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "vozocrte", "north_vector_component": "vomecrtn" },
             "votemper": { "envtype": "ocean", "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "valid_min": -100, "valid_max": 100 },
             "vosaline": { "envtype": "ocean", "name": "Salinity", "units": "PSU", "scale": [30, 40] },
-            "sozotaux": { "envtype": "ocean", "name": "Wind Stress along i-axis", "units": "N/m2", "scale": [-1000, 1000], "zero_centered": "true"  },
-            "sometauy": { "envtype": "ocean", "name": "Wind Stress along j-axis", "units": "N/m2", "scale": [-1000, 1000], "zero_centered": "true"  },
+            "sozotaux": { "envtype": "ocean", "name": "Wind Stress along i-axis", "units": "N/m2", "scale": [-100, 100], "zero_centered": "true"  },
+            "sometauy": { "envtype": "ocean", "name": "Wind Stress along j-axis", "units": "N/m2", "scale": [-100, 100], "zero_centered": "true"  },
             "sossheig": { "envtype": "ocean","name": "Sea Surface Height", "units": "m", "scale": [-3, 3], "zero_centered": "true" },
             "soicecov": { "envtype": "ocean","name": "Sea ice Cover", "units": "fraction", "scale": [0, 1]}
         }
