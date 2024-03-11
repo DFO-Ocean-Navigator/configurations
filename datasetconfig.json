@@ -1,11 +1,11 @@
 {
-    "giops_fc_10d_3dll": {
+    "giops_day": {
         "group": "GIOPS Forecast",
         "subgroup": "3D",        
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc3dll-10day.sqlite3",
 	    "bathymetry_file_url": "/data/grids/ecc/giops/bathy_meter_giops_latlon_reformatted-ONav.nc",
-        "name": "GIOPS Daily Mean Forecast 3D - LatLon",
+        "name": "GIOPS 10 Day Daily Mean Forecast 3D - LatLon",
         "quantum": "day",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
@@ -38,7 +38,7 @@
         "subgroup": "2D",        
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc2dll-10day.sqlite3",
-        "name": "GIOPS 3 Hour Mean Forecast Surface - LatLon",
+        "name": "GIOPS 10 Day 3 Hour Mean Forecast Surface - LatLon",
         "quantum": "day",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
