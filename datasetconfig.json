@@ -1,18 +1,18 @@
 {
-    "joel_model": {
-        "group": "Joël Chassé Model",
+    "gsl_model": {
+        "group": "GSL Model",
         "subgroup": "3D",          
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
         "enabled": true,
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
-        "name": "Joël Chassé Model",
+        "name": "GSL Model",
         "quantum": "day",
         "type": "forecast",
         "cache": 6,
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
-        "url": "/data/db/joel_data.sqlite3",
+        "url": "/data/db/gsl_model.sqlite3",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "lat_var",
         "lon_var_key": "lon_var",
