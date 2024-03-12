@@ -3,7 +3,7 @@
         "subgroup": "2D",        
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc2dll-10day.sqlite3",
-        "name": "GIOPS 10 day Forecast Surface - LatLon",
+        "name": "GIOPS 10 Day 3 Hour Mean Forecast Surface - LatLon",
         "quantum": "day",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
