@@ -1,4 +1,43 @@
 {
+    "crib_risk": {
+        "group": "CRIB",
+        "subgroup": "Risk Per Cell",        
+        "envtype": ["ocean", "ice"],
+        "url": "/data/db/crib.sqlite3",
+	    "bathymetry_file_url": "/data/grids/ecc/giops/bathy_meter_giops_latlon_reformatted-ONav.nc",
+        "name": "Risk Per Cell",
+        "quantum": "day",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "model_class": "Mercator",
+        "enabled": true,
+        "cache": 6,
+        "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+
+        "variables": {
+            "nspec": { "name": "Number of species", "units": "Count", "scale": [0, 1600] },
+            "hicrit.vuln": { "name": "Percentage of species assessed at high or critical climate risk", "units": "%", "scale": [0, 100] },
+            "hicrit.sens": { "name": "Percentage of species assessed at high or critical climate risk in the sensitivity dimension.", "units": "%", "scale": [0, 100] },
+            "hicrit.expo": { "name": "Percentage of species assessed at high or critical climate risk in the exposure dimension.", "units": "%", "scale": [0, 100] },
+            "hicrit.adcap": { "name": "Percentage of species assessed at high or critical climate risk in the adaptivity dimension.", "units": "%", "scale": [0, 100] },
+            "neg.vuln": { "name": "Percentage of species assessed at negligible climate risk", "units": "%", "scale": [0, 100] },
+            "neg.sens": { "name": "Percentage of species assessed at negligible climate risk in the sensitivity dimension.", "units": "%", "scale": [0, 100] },
+            "neg.expo": { "name": "Percentage of species assessed at negligible climate risk in the exposure dimension.", "units": "%", "scale": [0, 100] },
+            "neg.adcap": { "name": "Percentage of species assessed at negligible climate risk in the adaptivity dimension.", "units": "%", "scale": [0, 100] },
+            "hi.vuln": { "name": "Percentage of species assessed at high climate risk.", "units": "%", "scale": [0, 100] },
+            "hi.sens": { "name": "Percentage of species assessed at high climate risk in the sensitivity dimension.", "units": "%", "scale": [0, 100] },
+            "hi.expo": { "name": "Percentage of species assessed at high climate risk in the exposure dimension.", "units": "%", "scale": [0, 100] },
+            "hi.adcap": { "name": "Percentage of species assessed at high climate risk in the adaptivity dimension.", "units": "%", "scale": [0, 100] },
+            "crit.vuln": { "name": "Percentage of species assessed at critical climate risk.", "units": "%", "scale": [0, 100] },
+            "crit.sens": { "name": "Percentage of species assessed at critical climate risk in the sensitivity dimension.", "units": "%", "scale": [0, 100] },
+            "crit.expo": { "name": "Percentage of species assessed at critical climate risk in the exposure dimension.", "units": "%", "scale": [0, 100] },
+            "crit.adcap": { "name": "Percentage of species assessed at critical climate risk in the adaptivity dimension.", "units": "%", "scale": [0, 100] }
+        }
+    },
     "giops_day": {
         "group": "GIOPS Forecast",
         "subgroup": "3D",        
