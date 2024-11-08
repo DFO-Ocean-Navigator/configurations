@@ -441,7 +441,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "canso500": {
@@ -468,7 +469,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "fundy500": {
@@ -495,7 +497,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "kit100": {
@@ -522,7 +525,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "kit500": {
@@ -549,7 +553,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },    
     "sf30": {
@@ -576,7 +581,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "sj100": {
@@ -603,7 +609,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "sss150": {
@@ -630,17 +637,18 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "stle200": {
         "group": "POPS Forecast",
-        "subgroup": "St. Lawrence",           
+        "subgroup": "St. Lawrence River",           
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
         "enabled": true,
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
-        "name": "St. Lawrence - 200m",
+        "name": "St. Lawrence River - 200m",
         "quantum": "hour",
         "type": "forecast",
         "cache": 6,
@@ -657,17 +665,18 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "stle500": {
         "group": "POPS Forecast",
-        "subgroup": "St. Lawrence",           
+        "subgroup": "St. Lawrence River",           
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "envtype": ["ocean"],
         "enabled": true,
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
-        "name": "St. Lawrence - 500m",
+        "name": "St. Lawrence River - 500m",
         "quantum": "hour",
         "type": "forecast",
         "cache": 6,
@@ -684,7 +693,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "vh20": {
@@ -711,7 +721,8 @@
             "tos": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uos": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vos": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos" }
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
     "gdwps_2dll": {
