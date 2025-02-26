@@ -738,7 +738,7 @@
             "uo": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vo": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "zos": { "name": "Sea Surface Height", "units": "m", "scale": [-3, 3] },
-            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uos, vos)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "uos", "north_vector_component": "vos", "bearing_component": "bearing" },
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo", "bearing_component": "bearing" },
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
