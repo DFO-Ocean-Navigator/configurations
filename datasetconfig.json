@@ -734,7 +734,7 @@
         "vector_variables": ["magwatervel"],
         "variables": {
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
-            "to": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "tos - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
+            "to": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "to - 273.15", "dims": ["time", "y", "x"], "valid_min": -100, "valid_max": 100 },
             "uo": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vo": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "zos": { "name": "Sea Surface Height", "units": "m", "scale": [-3, 3] },
