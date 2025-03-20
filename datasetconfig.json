@@ -1009,8 +1009,8 @@
         "envtype": ["ocean"],
         "type": "historical",
         "url": [
-            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DuGridFields1hV19-05",
-            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DvGridFields1hV19-05"
+            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DuGridFields1hV21-11",
+            "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DvGridFields1hV21-11"
         ],
         "geo_ref": {
             "url": "/data/grids/salishsea/geo_reference_201702.nc",
