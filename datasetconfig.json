@@ -1119,7 +1119,7 @@
         "name": "SalishSeaCast 3D Biology",
         "envtype": ["ocean"],
         "type": "historical",
-        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DBiologyFields1hV19-05",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DBiologyFields1hV21-11",
         "geo_ref": {
             "url": "/data/grids/salishsea/geo_reference_201702.nc",
             "drop_variables": ["bathymetry"]
@@ -1179,7 +1179,7 @@
     "salishseacast_3d_tracers": {
         "group": "SalishSeaCast",
         "subgroup": "3D",
-        "enabled": true,
+        "enabled": false,
         "name": "SalishSeaCast 3D Salinity & Temperature",
         "envtype": ["ocean"],
         "type": "historical",
@@ -1208,7 +1208,7 @@
         "name": "SalishSeaCast Sea Surface Height",
         "envtype": ["ocean"],
         "type": "historical",
-        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSgSurfaceTracerFields1hV19-05",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSfSurfaceTracerFields1h",
         "geo_ref": {
             "url": "/data/grids/salishsea/geo_reference_201702.nc",
             "drop_variables": ["bathymetry"]
