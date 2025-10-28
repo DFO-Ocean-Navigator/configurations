@@ -775,6 +775,33 @@
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
         }
     },
+    "sj100-hindcast": {
+        "group": "POPS Hindcast",
+        "subgroup": "Bay of Fundy",           
+        "envtype": ["ocean"],
+        "enabled": true,
+        "help": "https://dfo-ocean-navigator.github.io/Dataset-Descriptions/#port-ocean-prediction-systems-pops",
+        "name": "Port of Saint John Hindcast - 100m",
+        "quantum": "hour",
+        "type": "forecast",
+        "cache": 6,
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "model_class": "Nemo",
+        "url": "/data/db/sj100_hindcast.sqlite3",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "lat",
+        "lon_var_key": "lon",
+        "default_location": [-66.0, 45.1, 10],
+        "vector_variables": ["magwatervel"],
+        "variables": {
+            "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
+            "to": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "to - 273.15", "dims": ["time", "depth", "y", "x"], "valid_min": -100, "valid_max": 100 },
+            "uo": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vo": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo", "bearing_component": "bearing" },
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vo, uo)" ,"dims": ["time", "y", "x"] }
+        }
+    },    
     "sss150-hindcast": {
         "group": "POPS Hindcast",
         "subgroup": "South Salish Sea",          
@@ -883,7 +910,7 @@
             "uo": { "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vo": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo", "bearing_component": "bearing" },
-            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vo, uo)" ,"dims": ["time", "y", "x"] }
         }
     },     
     "gdwps_2dll": {
