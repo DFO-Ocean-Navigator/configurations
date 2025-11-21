@@ -88,7 +88,6 @@
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
         "url": "/data/db/riops-fc2dll.sqlite3",
-        "grid_angle_file_url": "/data/grids/riops/grid_angle.nc",
         "attribution": "Environment and Climate Change Canada",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
@@ -1210,7 +1209,7 @@
         "name": "SalishSeaCast 3D Salinity & Temperature",
         "envtype": ["ocean"],
         "type": "historical",
-        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DTracerFields1hV19-05",
+        "url": "https://salishsea.eos.ubc.ca/erddap/griddap/ubcSSg3DPhysicsFields1hV21-11",
         "geo_ref": {
             "url": "/data/grids/salishsea/geo_reference_201702.nc",
             "drop_variables": ["bathymetry"]
