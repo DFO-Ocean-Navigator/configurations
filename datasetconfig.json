@@ -40,7 +40,7 @@
         "envtype": ["ocean", "ice"],
         "url": "/data/db/giops-fc2dll-10day.sqlite3",
         "name": "GIOPS 10 Day 3 Hour Mean Forecast Surface - LatLon",
-        "quantum": "day",
+        "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
