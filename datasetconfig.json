@@ -1097,7 +1097,7 @@
         "lat_var_key": "lat",
         "lon_var_key": "lon",
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_gdwps/readme_gdwps_en",
-        "vector_variables": ["Direction_of_wind_waves_surface", "Peak_wave_direction_surface", "magwindvel"],
+        "vector_variables": ["wvdir", "pwd", "magwindvel"],
         "variables": {
             "wvdir": { "name": "Wind wave direction", "units": "degrees", "scale": [0, 360] },
             "mwd1": { "name": "Mean wave direction of first swell partition", "units": "degrees", "scale": [0, 360] },
