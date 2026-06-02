@@ -13,8 +13,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "vector_arrow_stride": 10,
-        "vector_variables": ["magwatervel"],
+                "vector_variables": ["magwatervel"],
         "variables": {
             "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
