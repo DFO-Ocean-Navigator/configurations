@@ -1,0 +1,26 @@
+{
+    "caps_fc_3drp": {
+        "group": "CAPS Forecast",
+        "subgroup": "3D",          
+        "enabled": true,
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_en/",
+        "name": "CAPS Forecast 3D - Rotated Pole",
+        "quantum": "hour",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "model_class": "Nemo",
+        "url": "icechunk",
+        "grid_angle_file_url": "/data/grids/ecc/caps/grid_angle_caps_rp.nc",
+        "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "variables": {
+            "votemper": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "rlat", "rlon"], "valid_min": -100, "valid_max": 100 },
+            "vosaline": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
+            "vozocrtx": { "hide": "true", "name": "Water X Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vomecrty": { "hide": "true", "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
+            "vozocrte": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * cos_alpha - vomecrty * sin_alpha", "zero_centered": "true", "dims": ["time", "depth", "rlat", "rlon"] },
+            "vomecrtn": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3], "equation": "vozocrtx * sin_alpha + vomecrty * cos_alpha", "zero_centered": "true", "dims": ["time", "depth", "rlat", "rlon"] }
+        }
+    }
+}

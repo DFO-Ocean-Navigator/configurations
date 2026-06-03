@@ -1,16 +1,17 @@
+{
     "riops_fc_3dps": {
         "group": "RIOPS Forecast",
         "subgroup": "3D",          
         "climatology": "http://navigator.oceansdata.ca:8080/thredds/dodsC/climatology/Levitus98_PHC21/aggregated.ncml",
         "enabled": true,
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
         "name": "RIOPS Forecast 3D - Polar Stereographic",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
-        "bathymetry_file_url": "/data/grids/ecc/riops/bathy_meter_riops_ps5km_reformatted-ONav.nc",
-        "url": "/data/db/riops-fc3dps.sqlite3",
+	    "bathymetry_file_url": "/data/grids/ecc/riops/bathy_meter_riops_ps5km_reformatted-ONav.nc",
+        "url": "icechunk",
         "grid_angle_file_url": "/data/grids/ecc/riops/grid_angle_riops_ps5km60n.nc",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
@@ -25,14 +26,15 @@
             "votemper": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30], "equation": "votemper - 273.15", "dims": ["time", "depth", "yc", "xc"], "valid_min": -100, "valid_max": 100 },
             "vosaline": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
             "sspeed": { "name": "Speed of Sound", "scale": [1410, 1560], "units": "m/s", "equation": "sspeed(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "density": { "hide": "true", "name": "Water Density", "scale": [1000, 1050], "units": "kg/m^3", "equation": "density(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+            "density": { "name": "Water Density", "scale": [1000, 1050], "units": "kg/m^3", "equation": "density(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "heatcapacity": { "hide": "true", "name": "Heat Capacity", "scale": [3950, 4220], "units": "J/(kg*K)", "equation": "heatcap(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "tempgradient": { "hide": "true", "name": "Adiabatic Temp Gradient", "scale": [-2.9e-5, 1.5e-4], "units": "K/Pa", "equation": "tempgradient(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+	        "tempgradient": { "hide": "true", "name": "Adiabatic Temp Gradient", "scale": [-2.9e-5, 1.5e-4], "units": "K/Pa", "equation": "tempgradient(depth, latitude, votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "deepsoundchannel": { "name": "Sound Channel Axis", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannel([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
-            "oxygensaturation": { "hide": "true", "name": "Oxygen Saturation", "scale": [4, 11], "units": "ml/l", "equation": "oxygensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
-            "nitrogensaturation": { "hide": "true", "name": "Nitrogen Saturation", "scale": [8, 20], "units": "ml/l", "equation": "nitrogensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+	        "oxygensaturation": { "hide": "true", "name": "Oxygen Saturation", "scale": [4, 11], "units": "ml/l", "equation": "oxygensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
+	        "nitrogensaturation": { "hide": "true", "name": "Nitrogen Saturation", "scale": [8, 20], "units": "ml/l", "equation": "nitrogensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
             "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "yc", "xc"] },     
             "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","yc","xc"]}
         }
     }
+}

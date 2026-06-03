@@ -1,7 +1,8 @@
+{
     "wcps_2dll": {
         "group": "WCPS Forecast",
         "subgroup": "2D",                
-        "url": "/data/db/wcps-2dll.sqlite3",
+        "url": "icechunk",
         "name": "WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
         "quantum": "hour",
         "type": "forecast",
@@ -12,8 +13,9 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/\" target=\"_new\">link</a>.",
-                "vector_variables": ["magwatervel"],
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps_en/",
+        "vector_variables": ["magwatervel"],
+        "default_location": [-72, 45, 4],
         "variables": {
             "uwindsurf": { "name": "Surface Wind East Velocity", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
             "vwindsurf": { "name": "Surface Wind North Velocity", "units": "m/s", "scale": [-15, 15], "zero_centered": "true" },
@@ -36,3 +38,4 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(itmecrty, itzocrtx)" ,"dims": ["time", "latitude", "longitude"] }
         }
     }
+}

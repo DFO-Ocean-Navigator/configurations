@@ -2,7 +2,7 @@
     "ciops-east_fc_2dll": {
         "group": "CIOPS Forecast",
         "subgroup": "East",        
-        "url": "/data/db/ciops-east_fc_2dll.sqlite3",
+        "url": "icechunk",
         "name": "CIOPS Forecast East Surface - LatLon",
         "quantum": "hour",
         "type": "forecast",
@@ -13,8 +13,9 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": " Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/\" target=\"_new\">link</a>.",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_variables": ["magwatervel"],
+	    "default_location": [-57, 44.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -35,6 +36,6 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(itzocrtx, itmecrty)" ,"dims": ["time", "latitude", "longitude"] },
             "iicestrength": { "name": "Compressive Ice Strength", "units": "Nm-1", "scale": [-1, 1] },
             "iicepressure": { "name": "Internal Ice Pressure", "units": "Nm-1", "scale": [-1, 1] }
-        }
+         }
     }
 }

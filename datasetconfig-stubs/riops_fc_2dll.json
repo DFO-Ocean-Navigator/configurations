@@ -1,20 +1,20 @@
+{
     "riops_fc_2dll": {
         "group": "RIOPS Forecast",
         "subgroup": "CCG RIOPS 2D",          
         "climatology": "",
         "enabled": true,
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/\" target=\"_new\">link</a>.",
-        "name": "CCG RIOPS Forecast Surface - LatLon",
+        "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_riops/readme_riops_en/",
+	    "name": "CCG RIOPS Forecast Surface - LatLon",
         "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
-        "url": "/data/db/riops-fc2dll.sqlite3",
-        "grid_angle_file_url": "/data/grids/riops/grid_angle.nc",
+        "url": "icechunk",
         "attribution": "Environment and Climate Change Canada",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-                "vector_variables": ["magwatervel"],
+        "vector_variables": ["magwatervel"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -27,3 +27,4 @@
             "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vomecrty, vozocrtx)" ,"dims": ["time", "latitude", "longitude"] }
         }
     }
+}
