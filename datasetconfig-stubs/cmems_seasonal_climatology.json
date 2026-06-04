@@ -13,8 +13,7 @@
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
         "help": "./data-help/glorys12_climatology_seasonal.html",
-        "vector_arrow_stride": 10,
-        "vector_variables": ["magwatervel"],
+                "vector_variables": ["magwatervel"],
         "variables": {
             "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
