@@ -1,9 +1,10 @@
+{
     "giops_fc_10d_2dll": {
         "group": "GIOPS Forecast",
         "subgroup": "2D",        
-        "url": "/data/db/giops-fc2dll-10day.sqlite3",
+        "url": "icechunk",
         "name": "GIOPS 10 Day 3 Hour Mean Forecast Surface - LatLon",
-        "quantum": "day",
+        "quantum": "hour",
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
@@ -12,7 +13,7 @@
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document <a href=\"../data-help/giops-10day.html\" target=\"_new\">link</a>.",
+        "help": "./data-help/giops-10day.html",
         "vector_variables": ["magwatervel", "icevelocity"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
@@ -36,3 +37,4 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(itmecrty, itzocrtx)" ,"dims": ["time", "latitude", "longitude"] }
         }
     }
+}

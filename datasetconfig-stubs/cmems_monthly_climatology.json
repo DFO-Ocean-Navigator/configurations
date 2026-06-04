@@ -1,10 +1,11 @@
+{
     "cmems_monthly_climatology": {
         "group": "CMEMS",
         "subgroup": "Climatology (1993-2019)",        
         "name": "CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12 deg",
-        "url": "/data/db/mercatorglorys12v1_gl12_mean_monthly.sqlite3",
+	    "url": "icechunk",
         "help": "./data-help/glorys12_climatology_monthly.html",
-        "quantum": "month",
+	    "quantum": "month",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",
         "model_class": "Mercator",
@@ -13,7 +14,7 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-                "vector_variables": ["magwatervel"],
+        "vector_variables": ["magwatervel"],
         "variables": {
             "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-2, 26] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [9.5, 38.5] },
@@ -32,3 +33,4 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vsi, usi)" ,"dims": ["time", "latitude", "longitude"] }
         }
     }
+}

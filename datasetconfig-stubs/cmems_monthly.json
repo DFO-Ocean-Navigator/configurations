@@ -1,7 +1,8 @@
+{
     "cmems_monthly": {
         "group": "CMEMS",
         "subgroup": "Reanalysis",        
-        "url": "/data/db/cmems_monthly.sqlite3",
+        "url": "icechunk",
         "name": "Copernicus Marine Service Global Ocean 1/12 deg Physics Reanalysis (Monthly)",
         "quantum": "month",
         "type": "historical",
@@ -12,8 +13,8 @@
         "attribution": "E.U. Copernicus Marine Service Information (CMEMS)",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",
-        "help": "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Document <a href=\"https://resources.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030/INFORMATION\" target=\"_new\">link</a>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GLOBAL MULTIYEAR PHY 001 030 Information <a href=\"https://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-GLO-PUM-001-030.pdf\" target=\"_new\">link</a>.",
-                "vector_variables": ["magwatervel"],
+        "help": "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description",
+        "vector_variables": ["magwatervel"],
         "variables": {
             "thetao": { "name": "Potential Temperature", "units": "Celsius", "scale": [-5, 30] },
             "so": { "name": "Salinity", "units": "PSU", "scale": [30, 40] },
@@ -32,3 +33,4 @@
             "bearing_seaice": { "hide": "true", "name": "Sea Ice Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vsi, usi)" ,"dims": ["time", "latitude", "longitude"] }
         }
     }
+}
