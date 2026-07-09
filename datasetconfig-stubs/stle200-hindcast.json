@@ -2,11 +2,13 @@
     "stle200-hindcast": {
         "group": "POPS Hindcast",
         "subgroup": "St. Lawrence River",           
+        "envtype": ["ocean"],
         "enabled": true,
         "help": "https://dfo-ocean-navigator.github.io/Dataset-Descriptions/#port-ocean-prediction-systems-pops",
         "name": "St. Lawrence River Hindcast - 200m",
         "quantum": "hour",
         "type": "forecast",
+        "cache": 6,
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
         "url": "/data/db/stle200_hindcast.sqlite3",
@@ -22,7 +24,7 @@
             "vo": { "name": "Water Y Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "zos": { "name": "Sea Surface Height", "units": "m", "scale": [-3, 3] },
             "magwatervel": { "name": "Water Velocity", "units": "m/s", "scale": [0, 3], "equation": "magnitude(uo, vo)",  "dims": ["time", "depth", "y", "x"], "east_vector_component": "uo", "north_vector_component": "vo", "bearing_component": "bearing" },
-            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vos, uos)" ,"dims": ["time", "y", "x"] }
+            "bearing": { "hide": "true", "name": "Water Velocity Bearing (deg clockwise +tive from N)", "units": "degrees", "scale": [0, 360], "equation": "bearing(vo, uo)" ,"dims": ["time", "depth", "y", "x"] }
         }
     }
 }
