@@ -2,7 +2,7 @@
     "ciops-west_fc_3dll": {
         "group": "CIOPS Forecast",
         "subgroup": "West",           
-        "url": "icechunk",
+        "url": "/data/db/ciops-west_fc_3dll.sqlite3",
         "name": "CIOPS Forecast West 3D - LatLon",
         "quantum": "hour",
         "type": "forecast",

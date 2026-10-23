@@ -2,7 +2,7 @@
     "wcps_2dll": {
         "group": "WCPS Forecast",
         "subgroup": "2D",                
-        "url": "icechunk",
+        "url": "/data/db/wcps-2dll.sqlite3",
         "name": "WCPS-GLS Great Lakes Coupled Atmosphere-Ocean-Ice Forecast - LatLon",
         "quantum": "hour",
         "type": "forecast",

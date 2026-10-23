@@ -2,7 +2,7 @@
     "giops_fc_10d_2dll": {
         "group": "GIOPS Forecast",
         "subgroup": "2D",        
-        "url": "icechunk",
+        "url": "/data/db/giops-fc2dll-10day.sqlite3",
         "name": "GIOPS 10 Day 3 Hour Mean Forecast Surface - LatLon",
         "quantum": "hour",
         "type": "forecast",

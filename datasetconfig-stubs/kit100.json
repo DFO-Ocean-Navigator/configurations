@@ -9,7 +9,7 @@
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
-        "url": "icechunk",
+        "url": "/data/db/kit100.sqlite3",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "lat",
         "lon_var_key": "lon",

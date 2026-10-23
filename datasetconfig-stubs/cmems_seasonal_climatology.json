@@ -3,7 +3,7 @@
         "group": "CMEMS",
         "subgroup": "Climatology (1993-2019)",        
         "name": "CMEMS Global Ocean PHYS Reanalysis Climatology (Seasonal mean) 1/12deg",
-	    "url": "icechunk",
+	    "url": "/data/db/mercatorglorys12v1_gl12_mean-seasonal.sqlite3",
 	    "quantum": "season",
         "type": "historical",
         "time_dim_units": "hours since 1993-01-01",

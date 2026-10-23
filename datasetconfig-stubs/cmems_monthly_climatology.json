@@ -3,7 +3,7 @@
         "group": "CMEMS",
         "subgroup": "Climatology (1993-2019)",        
         "name": "CMEMS Global Ocean PHYS Reanalysis Climatology (Monthly mean) 1/12 deg",
-	    "url": "icechunk",
+	    "url": "/data/db/cmems_monthly.sqlite3",
         "help": "./data-help/glorys12_climatology_monthly.html",
 	    "quantum": "month",
         "type": "historical",

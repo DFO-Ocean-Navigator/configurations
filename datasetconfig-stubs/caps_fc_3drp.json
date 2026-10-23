@@ -9,7 +9,7 @@
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
-        "url": "icechunk",
+        "url": "/data/db/caps-fc3drp.sqlite3",
         "grid_angle_file_url": "/data/grids/ecc/caps/grid_angle_caps_rp.nc",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",

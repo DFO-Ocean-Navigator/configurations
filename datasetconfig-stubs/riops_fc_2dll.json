@@ -10,7 +10,7 @@
         "type": "forecast",
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Mercator",
-        "url": "icechunk",
+        "url": "/data/db/riops-fc2dll.sqlite3",
         "attribution": "Environment and Climate Change Canada",
         "lat_var_key": "latitude",
         "lon_var_key": "longitude",

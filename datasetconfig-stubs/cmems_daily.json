@@ -2,7 +2,7 @@
     "cmems_daily": {
         "group": "CMEMS",
         "subgroup": "Reanalysis",            
-        "url": "icechunk",
+        "url": "/data/db/cmems_daily.sqlite3",
         "name": "Copernicus Marine Service Global Ocean 1/12 deg Physics Reanalysis (Daily)",
         "quantum": "day",
         "type": "historical",

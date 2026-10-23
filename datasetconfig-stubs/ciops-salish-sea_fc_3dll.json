@@ -2,7 +2,7 @@
     "ciops-salish-sea_fc_3dll": {
         "group": "CIOPS Forecast",
         "subgroup": "Salish Sea",        
-        "url": "icechunk",
+        "url": "/data/db/ciops-salish_fc_3dll.sqlite3",
         "name": "CIOPS Forecast Salish Sea 3D - LatLon",
         "quantum": "hour",
         "type": "forecast",

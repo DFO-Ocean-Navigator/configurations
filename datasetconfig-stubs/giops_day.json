@@ -2,7 +2,7 @@
     "giops_day": {
         "group": "GIOPS Forecast",
         "subgroup": "3D",        
-        "url": "icechunk",
+        "url": "/data/db/giops-fc3dll-10day.sqlite3",
 	    "bathymetry_file_url": "/data/grids/ecc/giops/bathy_meter_giops_latlon_reformatted-ONav.nc",
         "name": "GIOPS 10 Day Daily Mean Forecast 3D - LatLon",
         "quantum": "hour",

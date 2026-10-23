@@ -11,7 +11,7 @@
         "time_dim_units": "seconds since 1950-01-01 00:00:00",
         "model_class": "Nemo",
 	    "bathymetry_file_url": "/data/grids/ecc/riops/bathy_meter_riops_ps5km_reformatted-ONav.nc",
-        "url": "icechunk",
+        "url": "/data/db/riops-fc3dps.sqlite3",
         "grid_angle_file_url": "/data/grids/ecc/riops/grid_angle_riops_ps5km60n.nc",
         "attribution": "The Canadian Centre for Meteorological and Environmental Prediction",
         "lat_var_key": "latitude",

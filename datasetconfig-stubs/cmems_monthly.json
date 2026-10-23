@@ -2,7 +2,7 @@
     "cmems_monthly": {
         "group": "CMEMS",
         "subgroup": "Reanalysis",        
-        "url": "icechunk",
+        "url": "/data/db/mercatorglorys12v1_gl12_mean_monthly.sqlite3",
         "name": "Copernicus Marine Service Global Ocean 1/12 deg Physics Reanalysis (Monthly)",
         "quantum": "month",
         "type": "historical",
