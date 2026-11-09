@@ -15,6 +15,7 @@
         "lon_var_key": "longitude",
         "help": "./data-help/giops-10day.html",
         "vector_variables": ["magwatervel", "icevelocity"],
+        "eddy_variables": ["sossheig"],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
             "vomecrty": { "name": "Water North Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },

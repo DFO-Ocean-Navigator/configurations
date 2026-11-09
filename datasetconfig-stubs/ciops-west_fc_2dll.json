@@ -15,6 +15,7 @@
         "lon_var_key": "longitude",
         "help": "https://eccc-msc.github.io/open-data/msc-data/nwp_ciops/readme_ciops_en/",
         "vector_variables": ["magwatervel"],
+        "eddy_variables": ["sossheig"],
 	    "default_location": [-133, 50.5, 4],
         "variables": {
             "vozocrtx": { "name": "Water East Velocity", "units": "m/s", "scale": [-3, 3], "zero_centered": "true" },
