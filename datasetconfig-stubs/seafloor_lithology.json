@@ -1,0 +1,19 @@
+{
+    "seafloor_lithology": {
+        "group": "Seafloor Lithology",
+        "url": "/data/db/seabed_lithology.sqlite3",
+        "name": "EarthByte Seafloor Lithology v1.0",
+        "quantum": "day",
+        "type": "forecast",
+        "time_dim_units": "seconds since 1950-01-01 00:00:00",
+        "model_class": "Mercator",
+        "enabled": true,
+        "attribution": "EarthByte Group, School of Geosciences, University of Sydney",
+        "lat_var_key": "latitude",
+        "lon_var_key": "longitude",
+        "help": "./data-help/giops-10day.html",
+        "variables": {
+            "lithology": { "name": "Seabed Lithology", "scale": [1, 13], "categorical":true}
+        }
+    }    
+}

@@ -34,7 +34,7 @@
 	        "nitrogensaturation": { "hide": "true", "name": "Nitrogen Saturation", "scale": [8, 20], "units": "ml/l", "equation": "nitrogensaturation(votemper - 273.15, vosaline)", "dims": ["time", "depth", "yc", "xc"] },
             "soniclayerdepth": { "name": "Sonic Layer Depth", "units": "m", "scale": [1.5, 60], "equation": "soniclayerdepth([depth], latitude, [votemper] - 273.15, [vosaline])", "dims": ["time", "yc", "xc"] },
             "deepsoundchannelbottom": { "name": "Critical Depth", "units": "m", "scale": [500, 2000], "equation": "deepsoundchannelbottom([depth], latitude, [votemper] - 273.15, [vosaline], bathy)", "dims": ["time", "yc", "xc"] },     
-            "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","yc","xc"]}
+            "psubsurfacechannel":{"name":"Potential Sub Surface Channel","units":"","scale":[0,1],"equation":"potentialsubsurfacechannel([depth],latitude, [votemper] - 273.15, [vosaline])","dims":["time","yc","xc"], "categorical":true}
         }
     }
 }

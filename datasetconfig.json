@@ -41,6 +41,7 @@
     "cmems_climatology": {},
     "cmems_monthly_climatology": {},
     "cmems_seasonal_climatology": {},
+    "seafloor_lithology": {},
     "salishseacast_3d_biology": {},
     "salishseacast_3d_currents": {},
     "salishseacast_3d_tracers": {},
